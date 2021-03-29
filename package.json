@@ -1,0 +1,23 @@
+{
+  "name": "fls-gulp",
+  "version": "1.0.0",
+  "description": "Сборка gulp",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Bykov/Oishi-Sushi.git"
+  },
+  "author": "Daniel Bykov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-Bykov/Oishi-Sushi/issues"
+  },
+  "homepage": "https://github.com/Daniel-Bykov/Oishi-Sushi#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-mustache": "^5.0.0"
+  }
+}
