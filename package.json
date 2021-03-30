@@ -1,7 +1,7 @@
 {
   "name": "fls-gulp",
   "version": "1.0.0",
-  "description": "Сборка gulp",
+  "description": "",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/Daniel-Bykov/Oishi-Sushi#readme",
   "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
     "gulp": "^4.0.2",
-    "gulp-mustache": "^5.0.0"
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-mustache": "^5.0.0",
+    "node-sass": "^5.0.0"
   }
 }
