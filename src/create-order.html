@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Оформление заказа</title>
+</head>
+
+<body>
+
+  <div class="container-main">
+    @@include('~header.html')
+
+    <div class="container-content container-content--transparent">
+      <h1>Оформление заказа</h1>
+
+        <div class="row">
+          <div class="col-xs">
+            <div class="box">
+
+        <div class="order-list">
+
+        <div class="container-content">
+
+       
+
+
+            <div class="order-item">
+              <div class="order-box">
+
+                <div class="order-item__icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+
+                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image order-image">
+
+                <div class="order-item-info">
+                  <p class="item-text__type item-box-type">Ролл</p>
+                  <p class="item-text__name item-box-name">Калифорния</p>
+                </div>
+
+                <div class="order-item-counter">
+                  <button class="item-info__plus item-box-plus order-item-counter__plus"></button>
+                  <div class="item-info__counter item-box-counter order-item-counter__number">1</div>
+                  <button class="item-info__minus item-box-minus order-item-counter__minus"></button>
+                </div>
+
+                <div class="order-item-price">
+                  <p class="item-text__price">320 ₽</p>
+                </div>
+
+                <button class="order-item-cancel">
+                  <img src="./assets/img/create-order/cancel.svg" alt="">
+                </button>
+
+              </div>
+            </div>
+
+            <div class="order-item">
+              <div class="order-box">
+
+                <div class="order-item__icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+
+                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image order-image">
+
+                <div class="order-item-info">
+                  <p class="item-text__type item-box-type">Ролл</p>
+                  <p class="item-text__name item-box-name">Калифорния</p>
+                </div>
+
+                <div class="order-item-counter">
+                  <button class="item-info__plus item-box-plus order-item-counter__plus"></button>
+                  <div class="item-info__counter item-box-counter order-item-counter__number">1</div>
+                  <button class="item-info__minus item-box-minus order-item-counter__minus"></button>
+                </div>
+
+                <div class="order-item-price">
+                  <p class="item-text__price">320 ₽</p>
+                </div>
+
+                <button class="order-item-cancel">
+                  <img src="./assets/img/create-order/cancel.svg" alt="">
+                </button>
+
+              </div>
+            </div>
+            <div class="order-item">
+              <div class="order-box">
+
+                <div class="order-item__icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+
+                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image order-image">
+
+                <div class="order-item-info">
+                  <p class="item-text__type item-box-type">Ролл</p>
+                  <p class="item-text__name item-box-name">Калифорния</p>
+                </div>
+
+                <div class="order-item-counter">
+                  <button class="item-info__plus item-box-plus order-item-counter__plus"></button>
+                  <div class="item-info__counter item-box-counter order-item-counter__number">1</div>
+                  <button class="item-info__minus item-box-minus order-item-counter__minus"></button>
+                </div>
+
+                <div class="order-item-price">
+                  <p class="item-text__price">320 ₽</p>
+                </div>
+
+                <button class="order-item-cancel">
+                  <img src="./assets/img/create-order/cancel.svg" alt="">
+                </button>
+
+              </div>
+            </div>
+
+            <div class="order-item-total">
+              <span class="order-item-total__name">Итого:</span>
+              <span class="order-item-total__value">1140 ₽</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-xs">
+      <div class="box">
+        <div class="order-personal-data">
+          <div class="container-content">
+            <div class="fields">
+
+   <div class="fields__inputs">
+              <div class="personal-data">
+                  <h2>Личные данные</h2>
+                  <div class="personal-data__input-box">
+                    <h3>Ваше имя</h3>
+                    <input type="text" class ="personal-data__input" placeholder="Имя">
+                  </div>
+                  <div class="personal-data__input-box">
+                    <h3>Номер телефона</h3>
+                    <input type="text" class ="personal-data__input" placeholder="Номер">
+                  </div>
+                  <div class="comment">
+                    <h3>Комментарий к заказу</h3>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Например: нет домофона"></textarea>
+                  </div>
+            </div>
+
+              <div class="delivery">
+                <h2>Доставка</h2>
+                <div class="personal-data__input-box">
+                  <h3>Выберите адрес</h3>
+                  <input type="text" class="personal-data__input" placeholder="Сохраненные адреса">
+                </div>
+                <div class="personal-data__input-box">
+                  <h3>Улица *</h3>
+                  <input type="text" class="personal-data__input" placeholder="Укажите улицу доставки">
+                </div>
+                <div class="personal-data__input-box">
+                  <h3>Номер дома *</h3>
+                  <input type="text" class="personal-data__input" placeholder="Номер дома">
+                </div>
+                <div class="personal-data__input-box">
+                  <h3>Номер квартиры *</h3>
+                  <input type="text" class="personal-data__input" placeholder="Номер квартиры">
+                </div>
+              </div>
+            </div>
+              <div class="personal-data-agree">
+                <input type="checkbox" class="check__element" id="HTML5" name="HTML5" value="yes">
+                <label for="HTML5">Я согласен с политикой обраотки персональных данных</label>
+                <button class="create-order-button">
+                 <span>Оформить заказ</span> </button>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+  @@include('~footer.html')
+
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper-main.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

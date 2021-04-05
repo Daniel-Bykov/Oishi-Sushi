@@ -1,12 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Oishi Sushi</title>
 </head>
+
 <body>
-    {{> ./templates/header.html }}
+
+  <div class="container-main">
+   @@include('~header.html')
+
+    <div class="container-content">
+      <div class="section-background">
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="section">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+              <div class="section-title">
+                <div class="section-title__logo">
+                  <div class="section-title__logo header-logo">Oishi <p class="header-logo--yellow">
+                      Sushi</p>
+                  </div>
+                </div>
+
+                <div class="section-title__title">Быстрая доставка вкусной японской еды</div>
+
+                <a href="#" class="section-title__view-menu">
+                  <p class="section-text__view-menu">Посмотреть меню</p>
+                </a>
+              </div>
+
+              <div class="section-info">
+
+                <div class="item">
+                  <img src="./assets/img/swiper/sushi main.png" alt="" class="section-image">
+                  <div class="item-info">
+                    <div class="item-info__title">
+                      <p class="item-text__type">Ролл</p>
+                      <p class="item-text__name">Маки</p>
+                      <p class="item-text__composition">Лосось, рис, салат, кунжут, нори</p>
+                    </div>
+
+                    <div class="item-info__price-quantity">
+                      <div class="item-info__price">
+                        <div class="item-info__price">
+                          <div class="rectangle-start"></div>
+                          <div class="rectangle-flex">
+                            <p class="item-text__price">320 ₽</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="item-info__quantity">260 гр / 6 шт.</div>
+                    </div>
+
+                    <div class="item-info__button-counter">
+                      <div class="item-info__counter">1
+
+                      </div>
+                      <button class="item-info-button">
+                        <p class="item-info-button__name header-button__name">Добавить к заказу
+                        </p>
+                        <div class="header-button__basket"></div>
+                      </button>
+                      <button class="item-info__plus"></button>
+                      <button class="item-info__minus"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+
+              <div class="section-title">
+                <div class="section-title__title">Быстрая доставка вкусной японской еды</div>
+
+                <a href="#" class="section-title__view-menu">
+                  <p class="section-text__view-menu">Посмотреть меню</p>
+                </a>
+              </div>
+
+              <div class="section-info">
+
+                <div class="item">
+                  <img src="./assets/img/swiper/sushi main.png" alt="" class="section-image">
+                  <div class="item-info">
+                    <div class="item-info__title">
+                      <p class="item-text__type">Ролл</p>
+                      <p class="item-text__name">Маки</p>
+                      <p class="item-text__composition">Лосось, рис, салат, кунжут, нори</p>
+                    </div>
+
+                    <div class="item-info__price-quantity">
+                      <div class="item-info__price">
+                        <div class="item-info__price">
+                          <div class="rectangle-start"></div>
+                          <div class="rectangle-flex">
+                            <p class="item-text__price">320 ₽</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="item-info__quantity">260 гр / 6 шт.</div>
+                    </div>
+
+                    <div class="item-info__button-counter">
+                      <div class="item-info__counter">1
+
+                      </div>
+                      <button class="item-info-button">
+                        <p class="item-info-button__name header-button__name">Добавить к заказу
+                        </p>
+                        <div class="header-button__basket"></div>
+                      </button>
+                      <button class="item-info__plus"></button>
+                      <button class="item-info__minus"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+
+              <div class="section-title">
+                <div class="section-title__title">Быстрая доставка вкусной японской еды</div>
+
+                <a href="#" class="section-title__view-menu">
+                  <p class="section-text__view-menu">Посмотреть меню</p>
+                </a>
+              </div>
+
+              <div class="section-info">
+
+                <div class="item">
+                  <img src="./assets/img/swiper/sushi main.png" alt="" class="section-image">
+                  <div class="item-info">
+                    <div class="item-info__title">
+                      <p class="item-text__type">Ролл</p>
+                      <p class="item-text__name">Маки</p>
+                      <p class="item-text__composition">Лосось, рис, салат, кунжут, нори</p>
+                    </div>
+
+                    <div class="item-info__price-quantity">
+                      <div class="item-info__price">
+                        <div class="item-info__price">
+                          <div class="rectangle-start"></div>
+                          <div class="rectangle-flex">
+                            <p class="item-text__price">320 ₽</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="item-info__quantity">260 гр / 6 шт.</div>
+                    </div>
+
+                    <div class="item-info__button-counter">
+                      <div class="item-info__counter">1
+
+                      </div>
+                      <button class="item-info-button">
+                        <p class="item-info-button__name header-button__name">Добавить к заказу
+                        </p>
+                        <div class="header-button__basket"></div>
+                      </button>
+                      <button class="item-info__plus"></button>
+                      <button class="item-info__minus"></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-content container-content--transparent">
+      <div class="tiles">
+        <a href="#" class="tiles-item">
+          <div class="tiles-item__title">Ролы</div>
+          <div class="tiles-item__picture"><img src="./assets/img/tiles/1 sushi.png" alt="" style="height: inherit;">
+          </div>
+        </a>
+        <a href="#" class="tiles-item">
+
+          <div class="tiles-item__title">Сеты</div>
+          <div class="tiles-item__picture"><img src="./assets/img/tiles/2 sushi.png" alt="" style="height: inherit;">
+          </div>
+        </a>
+        <a href="#" class="tiles-item">
+          <div class="tiles-item__title">Запеченные ролы</div>
+          <div class="tiles-item__picture"><img src="./assets/img/tiles/3 sushi.png" alt="" style="height: inherit;">
+          </div>
+        </a>
+        <a href="#" class="tiles-item">
+          <div class="tiles-item__title">Воки</div>
+          <div class="tiles-item__picture"><img src="./assets/img/tiles/4 sushi.png" alt="" style="height: inherit;">
+          </div>
+        </a>
+        <a href="#" class="tiles-item">
+          <div class="tiles-item__title">Супы</div>
+          <div class="tiles-item__picture"><img src="./assets/img/tiles/5 sushi.png" alt="" style="height: inherit;">
+          </div>
+        </a>
+        <a href="#" class="tiles-item">
+          <div class="tiles-item__title">Напитки</div>
+          <div class="tiles-item__picture"><img src="./assets/img/tiles/6 sushi.png" alt="" style="height: inherit;">
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="container-content container-content--transparent">
+      <div class="item-box-title">
+        <h1>Популярное</h1>
+      </div>
+
+      <div class="swiper-container-popular">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="item-box">
+              <div class="item-box__pictures">
+                <div class="item-box-icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image">
+                <button class="item-box-add-like">
+                  <img src="./assets/img/favorite/like.svg" alt="" class="">
+                  <p class="item-box-add-like__counter">54</p>
+                </button>
+              </div>
+
+              <div class="item-info">
+                <div class="item-info__title">
+                  <p class="item-text__type item-box-type">Ролл</p>
+                  <p class="item-text__name item-box-name">Калифорния</p>
+                  <p class="item-text__composition item-box-composition">Нори, креветка, авокадо,
+                    огурец</p>
+                </div>
+
+                <div class="item-info__price-quantity item-box__price-quantity">
+                  <div class="item-info__price">
+                    <div class="rectangle-start"></div>
+                    <div class="rectangle-flex">
+                      <p class="item-text__price">320 ₽</p>
+                    </div>
+
+                  </div>
+                  <div class="item-info__quantity">260 гр / 6 шт.</div>
+                </div>
+
+                <div class="item-info__button-counter">
+                  <div class="item-info__counter item-box-counter">1</div>
+                  <button class="item-info-button item-info-button item-box-button">
+                    <p class="item-info-button__name">Добавить к заказу</p>
+                    <div class="item-info-button__basket"></div>
+                  </button>
+                  <button class="item-info__plus item-box-plus"></button>
+                  <button class="item-info__minus item-box-minus"></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-box">
+              <div class="item-box__pictures">
+                <div class="item-box-icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+                <img src="./assets/img/favorite/item/2p.png" alt="" class="item-box-image">
+                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
+                  <p class="item-box-add-like__counter">41</p>
+                </button>
+              </div>
+
+              <div class="item-info">
+                <div class="item-info__title">
+                  <p class="item-text__type item-box-type">Суп</p>
+                  <p class="item-text__name item-box-name">Мисо</p>
+                  <p class="item-text__composition item-box-composition">Сыр тофу, бульон из комбу и
+                    тунца,
+                    вакаме, паста мисо, лук-порей</p>
+                </div>
+
+                <div class="item-info__price-quantity item-box__price-quantity">
+                  <div class="item-info__price">
+                    <div class="rectangle-start"></div>
+                    <div class="rectangle-flex">
+                      <p class="item-text__price">400 ₽</p>
+                    </div>
+
+                  </div>
+                  <div class="item-info__quantity">350 гр.</div>
+                </div>
+
+                <div class="item-info__button-counter">
+                  <div class="item-info__counter item-box-counter">1</div>
+                  <button class="item-info-button item-info-button item-box-button">
+                    <p class="item-info-button__name">Добавить к заказу</p>
+                    <div class="item-info-button__basket"></div>
+                  </button>
+                  <button class="item-info__plus item-box-plus"></button>
+                  <button class="item-info__minus item-box-minus"></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-box">
+              <div class="item-box__pictures">
+                <div class="item-box-icons">
+                  <button class="item-box-icons__favorite"></button>
+                  <img src="./assets/img/favorite/veg.svg" alt="">
+                  <img src="./assets/img/favorite/hot.svg" alt="">
+                </div>
+                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
+                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
+                  <p class="item-box-add-like__counter">26</p>
+                </button>
+              </div>
+
+              <div class="item-info">
+                <div class="item-info__title">
+                  <p class="item-text__type item-box-type">Вок</p>
+                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
+                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
+                    тофу,
+                    лук-порей, зелень, соевые соус</p>
+                </div>
+
+                <div class="item-info__price-quantity item-box__price-quantity">
+                  <div class="item-info__price">
+                    <div class="rectangle-start"></div>
+                    <div class="rectangle-flex">
+                      <p class="item-text__price">320 ₽</p>
+                    </div>
+
+                  </div>
+                  <div class="item-info__quantity">350 гр.</div>
+                </div>
+
+                <div class="item-info__button-counter">
+                  <div class="item-info__counter item-box-counter">1</div>
+                  <button class="item-info-button item-info-button item-box-button">
+                    <p class="item-info-button__name">Добавить к заказу</p>
+                    <div class="item-info-button__basket"></div>
+                  </button>
+                  <button class="item-info__plus item-box-plus"></button>
+                  <button class="item-info__minus item-box-minus"></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-box">
+              <div class="item-box__pictures">
+                <div class="item-box-icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+                <img src="./assets/img/favorite/item/4p.png" alt="" class="item-box-image">
+                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
+                  <p id="item-box-add-like__count" class="item-box-add-like__counter">37</p>
+                </button>
+              </div>
+
+              <div class="item-info">
+                <div class="item-info__title">
+                  <p class="item-text__type item-box-type">Ролл</p>
+                  <p class="item-text__name item-box-name">Филадельфия</p>
+                  <p class="item-text__composition item-box-composition">Рис, лосось, сыр филадельфия,
+                    авокадо, нори</p>
+                </div>
+
+                <div class="item-info__price-quantity item-box__price-quantity">
+                  <div class="item-info__price">
+                    <div class="rectangle-start"></div>
+                    <div class="rectangle-flex">
+                      <p class="item-text__price">320 ₽</p>
+                    </div>
+
+                  </div>
+                  <div class="item-info__quantity">260 гр / 6 шт.</div>
+                </div>
+
+                <div class="item-info__button-counter">
+                  <div class="item-info__counter item-box-counter">1</div>
+                  <button class="item-info-button item-info-button item-box-button">
+                    <p class="item-info-button__name">Добавить к заказу</p>
+                    <div class="item-info-button__basket"></div>
+                  </button>
+                  <button class="item-info__plus item-box-plus"></button>
+                  <button class="item-info__minus item-box-minus"></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="item-box">
+              <div class="item-box__pictures">
+                <div class="item-box-icons">
+                  <button class="item-box-icons__favorite"></button>
+                </div>
+                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image">
+                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
+                  <p class="item-box-add-like__counter">54</p>
+                </button>
+              </div>
+
+              <div class="item-info">
+                <div class="item-info__title">
+                  <p class="item-text__type item-box-type">Ролл</p>
+                  <p class="item-text__name item-box-name">Калифорния</p>
+                  <p class="item-text__composition item-box-composition">Нори, креветка, авокадо,
+                    огурец</p>
+                </div>
+
+                <div class="item-info__price-quantity item-box__price-quantity">
+                  <div class="item-info__price">
+                    <div class="rectangle-start"></div>
+                    <div class="rectangle-flex">
+                      <p class="item-text__price">320 ₽</p>
+                    </div>
+
+                  </div>
+                  <div class="item-info__quantity">260 гр / 6 шт.</div>
+                </div>
+
+                <div class="item-info__button-counter">
+                  <div class="item-info__counter item-box-counter">1</div>
+                  <button class="item-info-button item-info-button item-box-button">
+                    <p class="item-info-button__name">Добавить к заказу</p>
+                    <div class="item-info-button__basket"></div>
+                  </button>
+                  <button class="item-info__plus item-box-plus"></button>
+                  <button class="item-info__minus item-box-minus"></button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+
+    @@include('~footer.html')
+
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper-main.min.js"></script>
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

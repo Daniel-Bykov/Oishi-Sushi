@@ -1,3 +1,3 @@
 module.exports = {
-    "musketeers": ["Athos", "Aramis", "Porthos", "D'Artagnan"]
+    "cards": ["susi", "Aramis", "Porthos", "D'Artagnan"]
 }
