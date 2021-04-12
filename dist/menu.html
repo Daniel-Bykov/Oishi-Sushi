@@ -20,12 +20,12 @@
   <div class="container-main">
     <header class="header">
   <div class="header__menu-block">
-    <a href="items-1.html" class="header-menu">
+    <button class="header-menu">
       <div class="header-menu-burger">
         <div class="header-menu-burger__line"></div>
       </div>
       <p class="header-menu__name">Меню</p>
-    </a>
+    </button>
     <a href="index.html" class="header-logo">Oishi <p class="header-logo--yellow">Sushi</p>
     </a>
   </div>
@@ -33,20 +33,20 @@
   <div class="header__links">
     <a href="#" class="links__header">Условия доставки</a>
     <a href="#" class="links__header">Акции</a>
-    <a href="#" class="links__header">Вакансии</a>
-    <a href="#" class="links__header">Контакты</a>
+    <a href="vacancy.html" class="links__header">Вакансии</a>
+    <a href="contacts.html" class="links__header">Контакты</a>
   </div>
 
   <div class="header__right-block">
-    <div class="header-order-time">
+    <div class="header-order-time mg-r-30">
       <p class="header-order-time__title">Прием заказов</p>
       <p class="header-order-time__time">9:00 - 00:00</p>
     </div>
-    <div class="header-phone-number">
+    <div class="header-phone-number mg-r-30">
       <div class="header-phone-number__icon"></div>
       <a href="tel:7495450600" class="header-phone-number__number">7 (495) 450 - 600</a>
     </div>
-    <a href="#" class="header-button">
+    <a href="#" class="header-button" id="header-button__profile">
       <div class="header-button__profile"></div>
     </a>
     <a href="#" class="header-button">
@@ -56,18 +56,72 @@
       <p class="header-button__text header-text">770 ₽</p>
       <div class="header-button__basket"></div>
     </a>
-
   </div>
+
+
 </header>
+
+
+<div class="enter-form-wrap">
+  <div class="enter-form__shadow" id="enter-form"></div>
+  <div class="enter-form" >
+
+    <button class="enter-form__close"></button>
+    <div class="enter-form-header">
+      <span class="tiles-item__title enter-form-title">Вход</span>
+      <a href="#" class="enter-form-reg">Регистрация</a>
+    </div>
+      <div class="personal-data__input-box">
+        <h3 class="mg-bt-5">Номер телефона</h3>
+        <input id="phone-number" type="text" class="personal-data__input" placeholder="+7 (___) ___ - __ - __" >
+      </div>
+
+      <div class="personal-data__input-box"  >
+        <h3 class="mg-bt-5"><label for="pwd">Пароль</label></h3>
+        <input type="password" id="pwd" name="pwd" minlength="8" class="personal-data__input"></div>
+        <a href="account.html" class="item-info-button item-box-button">
+          <span class="item-info-button__name">Войти</span>  </a>
+      
+        <div class="enter-form-footer">
+          <a href="#" class="footer-left__agree">Забыли пароль?</a>
+        </div>
+
+  </div></div>
+
+  <div class="container-content menu">
+    <div class="menu-box">
+    <div class="header__links menu-box__links">
+    <a href="index.html" class="header-logo mg-bt-50">Oishi <p class="header-logo--yellow">Sushi</p></a>
+    <a href="index.html" class="links__header menu-box-link">Главная страница</a>
+    <a href="menu.html" class="links__header menu-box-link">Посмотреть меню</a>
+    <a href="#" class="links__header menu-box-link">Условия доставки</a>
+    <a href="#" class="links__header menu-box-link">Акции</a>
+    <a href="vacancy.html" class="links__header menu-box-link">Вакансии</a>
+    <a href="contacts.html" class="links__header menu-box-link">Контакты</a>
+  </div>
+
+  <div class="header__right-block menu-box__right-block">
+    <div class="header-order-time">
+      <p class="header-order-time__title">Прием заказов</p>
+      <p class="header-order-time__time">9:00 - 00:00</p>
+    </div>
+    <div class="header-phone-number">
+      <div class="header-phone-number__icon"></div>
+      <a href="tel:7495450600" class="header-phone-number__number">7 (495) 450 - 600</a>
+    </div></div>
+  </div>
+</div>
+
     <div class="container-content">
       <div class="filter">
-        
+
         <div class="filter-mobile">
-        <span class="filter-title">Фильтр</span>
-            <button class="filter-drop-down">
-              <span class="filter-current">Ролы</span>
-              <img class="filter-drop-down__ico" src="./assets/img/favorite/drop-down.svg" alt="">
-            </button></div>
+          <span class="filter-title">Фильтр</span>
+          <button class="filter-drop-down">
+            <span class="filter-current">Ролы</span>
+            <img class="filter-drop-down__ico" src="./assets/img/favorite/drop-down.svg" alt="">
+          </button>
+        </div>
 
         <div class="filter-type">
           <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
@@ -145,13 +199,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -194,13 +250,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -246,13 +304,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -295,13 +355,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -344,13 +406,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -392,13 +456,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -441,13 +507,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -493,13 +561,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -546,13 +616,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -598,13 +670,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -650,13 +724,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -702,13 +778,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -753,65 +831,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
                   </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -857,13 +885,69 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs">
+          <div class="box">
+            <div class="item-box">
+              <div class="item-box__pictures">
+                <div class="item-box-icons">
+                  <button class="item-box-icons__favorite"></button>
+                  <img src="./assets/img/favorite/veg.svg" alt="">
+                  <img src="./assets/img/favorite/hot.svg" alt="">
+                </div>
+                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
+                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
+                  <p class="item-box-add-like__counter">26</p>
+                </button>
+              </div>
+
+              <div class="item-info">
+                <div class="item-info__title">
+                  <p class="item-text__type item-box-type">Вок</p>
+                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
+                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
+                    тофу,
+                    лук-порей, зелень, соевые соус</p>
+                </div>
+
+                <div class="item-info__price-quantity item-box__price-quantity">
+                  <div class="item-info__price">
+                    <div class="rectangle-start"></div>
+                    <div class="rectangle-flex">
+                      <p class="item-text__price">320 ₽</p>
+                    </div>
+
+                  </div>
+                  <div class="item-info__quantity">350 гр.</div>
+                </div>
+
+                <div class="item-info__button-counter">
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
+                  <button class="item-info-button item-info-button item-box-button">
+                    <p class="item-info-button__name">Добавить к заказу</p>
+                    <div class="item-info-button__basket"></div>
+                  </button>
                 </div>
               </div>
 
@@ -908,13 +992,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -948,7 +1034,7 @@
             <span class="pages-navigation-button__number">5</span>
           </a>
 
-          <a href="#"  class="pages-navigation-button">
+          <a href="#" class="pages-navigation-button">
             <img src="./assets/img/items-gallery/arrow-right.svg" alt="">
           </a>
         </div>
@@ -982,36 +1068,7 @@
     </div>
   </div>
 
-  <div class="footer-mobile">
-    <div class="footer-mobile-top">
 
-      <div class="footer-center-address-phone">
-        <p class="footer-center-address-phone__title">ТЕЛЕФОН</p>
-        <div class="footer-center-address-phone__name-callback">
-          <a href="tel:7495450600" class="footer-center-address-phone__name">7 (495) 450 - 600</a>
-          <p class="footer-left__agree">Обратная свзяь</p>
-        </div>
-      </div>
-      <div class="footer-center-address-phone">
-        <p class="footer-center-address-phone__title">АДРЕС</p>
-        <p class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</p>
-      </div>
-
-    </div>
-    <div class="footer-mobile-center">
-      <a href="#" class="footer-social"> <img src="./assets/img/footer/social/vk.svg" alt=""> </a>
-      <a href="#" class="footer-social"> <img src="./assets/img/footer/social/ok.svg" alt=""> </a>
-      <a href="#" class="footer-social"> <img src="./assets/img/footer/social/fb.svg" alt=""> </a>
-      <a href="#" class="footer-social"> <img src="./assets/img/footer/social/inst.svg" alt=""> </a>
-
-    </div>
-    <div class="footer-bottom">
-
-      <p class="footer-left__rights">© 2017 OishīSushi</p>
-      <p class="footer-left__agree">Согласие на обработку персональных данных</p>
-
-    </div>
-  </div>
 
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

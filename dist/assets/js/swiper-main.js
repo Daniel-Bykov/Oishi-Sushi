@@ -38,17 +38,17 @@ var swiper = new Swiper('.swiper-container', {
         width: 1620,  
         allowTouchMove:false,
       },
-
-      490: {
-        slidesPerView: 4,
-        width: 1200,  
-        spaceBetween: 18,
-      },
-
+    
       320: {
         allowTouchMove:true,
+        slidesPerView: 3,
+        width: 900,  
+      },
+
+    0: {
+        allowTouchMove:true,
         slidesPerView: 2,
-        width: 484,  
+        width: 600,  
       },
     }
   });

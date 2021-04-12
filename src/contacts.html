@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./assets/styles/reset.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+    type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <title>Меню</title>
+</head>
+
+<body>
+
+  <div class="container-main">
+    @@include('~header.html')
+ 
+    <div class="container-content container-content--transparent">
+      <h1 class="mg-bt-30">Контакты</h1>
+        <div class="container-content">
+          <div class="contacts-box">
+            <div class="contacts__items mg-r-20">
+              
+              <div class="contacts__item-box">
+               <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/location.svg" alt="">
+               <div class="footer-center-address-phone">
+                <p class="footer-center-address-phone__title">АДРЕС</p>
+                <p class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</p>
+              </div>
+              </div>
+
+              <div class="contacts__item-box">
+                <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/phone.svg" alt="">
+                <div class="footer-center-address-phone">
+                 <p class="footer-center-address-phone__title">ТЕЛЕФОН</p>
+                 <p class="footer-center-address-phone__name">7 (495) 450-600</p>
+                 <p class="footer-center-address-phone__name">7 (495) 450-600</p>
+               </div>
+               </div>
+
+               <div class="contacts__item-box">
+                <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/email.svg" alt="">
+                <div class="footer-center-address-phone">
+                 <p class="footer-center-address-phone__title">E-MAIL</p>
+                 <p>info@oishi-sushi.ru</p>
+               </div>
+               </div>
+
+               <div class="contacts__item-box">
+                <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/time.svg" alt="">
+                <div class="footer-center-address-phone">
+                 <p class="footer-center-address-phone__title">РЕЖИМ РАБОТЫ</p>
+                 <p class="footer-center-address-phone__name">Ежедневно с 9:00 до 00:00</p>
+               </div>
+               </div>
+
+            </div>
+            <div class="contacts-map">
+              <div id="googleMap"></div>
+              
+
+              <script>function myMap() {
+
+                const sar = { lat: 56.479772, lng: 53.817661 };
+                var mapProp= {
+                    center:new google.maps.LatLng(51.508742,-0.120850),
+                    zoom:5,
+                };
+                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                const marker = new google.maps.Marker({
+              position: sar,
+              map: map,  });
+                }</script>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    @@include('~footer.html')
+
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApt2nP2xfyeGsW-6SFxJW_1dLC-AFMSIU&callback=myMap"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper-main.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

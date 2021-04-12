@@ -16,7 +16,8 @@
 <body>
 
   <div class="container-main">
-   @@include('~header.html')
+    
+    @@include('~header.html')
 
     <div class="container-content">
       <div class="section-background">
@@ -36,7 +37,60 @@
 
                 <div class="section-title__title">Быстрая доставка вкусной японской еды</div>
 
-                <a href="#" class="section-title__view-menu">
+                <a href="menu.html" class="section-title__view-menu">
+                  <p class="section-text__view-menu">Посмотреть меню</p>
+                </a>
+              </div>
+
+              <div class="section-info">
+
+                <div class="item">
+                  <img src="./assets/img/swiper/sushi main.png" alt="" class="section-image">
+                  <div class="item-info">
+                    <div class="item-info__title">
+                      <p class="item-text__type">Ролл</p>
+                      <p class="item-text__name">Маки</p>
+                      <p class="item-text__composition">Лосось, рис, салат, кунжут, нори</p>
+                    </div>
+
+                    <div class="item-info__price-quantity">
+                      <div class="item-info__price">
+                        <div class="item-info__price">
+                          <div class="rectangle-start rectangle-start--main-slider"></div>
+                          <div class="rectangle-flex rectangle-flex--main-slider">
+                            <p class="item-text__price">320 ₽</p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="item-info__quantity">260 гр / 6 шт.</div>
+                    </div>
+
+                    <div class="item-info__button-counter">
+                      <div class="item-info__counter">
+                        <div class="item-info__counter-quantity">1</div>
+                        <button class="item-info__plus"></button>
+                        <button class="item-info__minus"></button>
+                      </div>
+                      <button class="item-info-button">
+                        <p class="item-info-button__name header-button__name">Добавить к заказу
+                        </p>
+                        <div class="header-button__basket"></div>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-slide">
+
+              <div class="section-title">
+                <div class="section-title__title">Быстрая доставка вкусной японской еды</div>
+
+                <a href="menu.html" class="section-title__view-menu">
                   <p class="section-text__view-menu">Посмотреть меню</p>
                 </a>
               </div>
@@ -66,16 +120,16 @@
                     </div>
 
                     <div class="item-info__button-counter">
-                      <div class="item-info__counter">1
-
+                      <div class="item-info__counter">
+                        <div class="item-info__counter-quantity">1</div>
+                        <button class="item-info__plus"></button>
+                        <button class="item-info__minus"></button>
                       </div>
                       <button class="item-info-button">
                         <p class="item-info-button__name header-button__name">Добавить к заказу
                         </p>
                         <div class="header-button__basket"></div>
                       </button>
-                      <button class="item-info__plus"></button>
-                      <button class="item-info__minus"></button>
                     </div>
                   </div>
                 </div>
@@ -118,68 +172,16 @@
                     </div>
 
                     <div class="item-info__button-counter">
-                      <div class="item-info__counter">1
-
+                      <div class="item-info__counter">
+                        <div class="item-info__counter-quantity">1</div>
+                        <button class="item-info__plus"></button>
+                        <button class="item-info__minus"></button>
                       </div>
                       <button class="item-info-button">
                         <p class="item-info-button__name header-button__name">Добавить к заказу
                         </p>
                         <div class="header-button__basket"></div>
                       </button>
-                      <button class="item-info__plus"></button>
-                      <button class="item-info__minus"></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="swiper-slide">
-
-              <div class="section-title">
-                <div class="section-title__title">Быстрая доставка вкусной японской еды</div>
-
-                <a href="#" class="section-title__view-menu">
-                  <p class="section-text__view-menu">Посмотреть меню</p>
-                </a>
-              </div>
-
-              <div class="section-info">
-
-                <div class="item">
-                  <img src="./assets/img/swiper/sushi main.png" alt="" class="section-image">
-                  <div class="item-info">
-                    <div class="item-info__title">
-                      <p class="item-text__type">Ролл</p>
-                      <p class="item-text__name">Маки</p>
-                      <p class="item-text__composition">Лосось, рис, салат, кунжут, нори</p>
-                    </div>
-
-                    <div class="item-info__price-quantity">
-                      <div class="item-info__price">
-                        <div class="item-info__price">
-                          <div class="rectangle-start"></div>
-                          <div class="rectangle-flex">
-                            <p class="item-text__price">320 ₽</p>
-                          </div>
-
-                        </div>
-                      </div>
-                      <div class="item-info__quantity">260 гр / 6 шт.</div>
-                    </div>
-
-                    <div class="item-info__button-counter">
-                      <div class="item-info__counter">1
-
-                      </div>
-                      <button class="item-info-button">
-                        <p class="item-info-button__name header-button__name">Добавить к заказу
-                        </p>
-                        <div class="header-button__basket"></div>
-                      </button>
-                      <button class="item-info__plus"></button>
-                      <button class="item-info__minus"></button>
                     </div>
                   </div>
                 </div>
@@ -231,7 +233,7 @@
 
     <div class="container-content container-content--transparent">
       <div class="item-box-title">
-        <h1>Популярное</h1>
+        <h1 class="mg-bt-30">Популярное</h1>
       </div>
 
       <div class="swiper-container-popular">
@@ -269,13 +271,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -314,13 +318,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -361,13 +367,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -405,13 +413,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
@@ -449,13 +459,15 @@
                 </div>
 
                 <div class="item-info__button-counter">
-                  <div class="item-info__counter item-box-counter">1</div>
+                  <div class="item-info__counter">
+                    <div class="item-info__counter-quantity">1</div>
+                    <button class="item-info__plus"></button>
+                    <button class="item-info__minus"></button>
+                  </div>
                   <button class="item-info-button item-info-button item-box-button">
                     <p class="item-info-button__name">Добавить к заказу</p>
                     <div class="item-info-button__basket"></div>
                   </button>
-                  <button class="item-info__plus item-box-plus"></button>
-                  <button class="item-info__minus item-box-minus"></button>
                 </div>
               </div>
 
