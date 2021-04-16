@@ -1,62 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
-
-  //---------------------------Save Street DropDown
-
-  let saveStreetButton = document.querySelector(".save-street-list")
-  let saveStreet = document.querySelector(".save-street")
-  let saveStreetCurrent = document.querySelector(".save-street-list__text")
-  let saveStreetOptions = document.querySelectorAll(".save-street-list__text--options")
-  let saveStreetOptionsBox = document.querySelector(".save-street-list__options")
-
-  if (saveStreet != null) {
-    saveStreetButton.addEventListener('click', () => {
-      saveStreetOptionsBox.classList.toggle('save-street-list__options--open');
-      saveStreetOptionsBox.classList.toggle('save-street-list__options--active');
-      saveStreetButton.classList.toggle('save-street-list--active');
-      saveStreetButton.classList.remove('save-street-list--open');
-    })
-  }
-
-  saveStreetOptions.forEach((item, index) => {
-    item.addEventListener('click', () => {
-
-      if (item.textContent === "Указать другой адрес") {
-        console.log(saveStreetButton)
-        saveStreetButton.classList.remove('save-street-list--open');
-        saveStreetCurrent.textContent = "Сохраненные адреса";
-      }
-      else saveStreetCurrent.textContent = item.textContent;
-      saveStreetOptionsBox.classList.remove('save-street-list__options--open');
-
-      if (item.textContent != "Указать другой адрес") {
-        saveStreetButton.classList.add('save-street-list--open')
-      }
-
-      if (item.textContent != "Указать другой адрес") {
-        let street = document.getElementById('street')
-        let home = document.getElementById('home')
-        let apartment = document.getElementById('apartment')
-        street.className = "personal-data__input";
-        home.className = "personal-data__input";
-        apartment.className = "personal-data__input";
-        street.value = "";
-        home.value = "";
-        apartment.value = "";
-        street.disabled = true;
-        home.disabled = true;
-        apartment.disabled = true;
-      }
-
-      else {
-        street.disabled = false;
-        home.disabled = false;
-        apartment.disabled = false;
-      }
-    })
-  })
-
   //---------------------------Filter DropDown
 
   let filterButton = document.querySelectorAll(".filter-type__button")
@@ -71,15 +14,16 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-
   filterButton.forEach((item, index) => {
     item.addEventListener('click', () => {
+      
       filterButton.forEach((item, index) => {
-        item.classList.remove('filter-active');
+
         if (item.classList.contains('filter-active'))
           item.firstChild.style.display = "block";
         else item.firstChild.style.display = "none";
       })
+
       item.classList.toggle('filter-active');
       filterCurrent.textContent = item.textContent;
 
@@ -104,16 +48,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //---------------------------Order Mobile Transition
 
-  let continueOrder = document.querySelector(".order-continue");
+  let continueOrder = document.querySelector(".basket-list__continue");
   let personalData = document.querySelector(".order-personal-data");
-  let orderList = document.querySelector(".order-list");
+  let orderList = document.querySelector(".basket-list");
   let backOrderList = document.querySelector(".create-order-button--back");
-
+  let mql = window.matchMedia('(max-width: 1600px)');
 
   if (continueOrder != null) {
     continueOrder.addEventListener('click', () => {
+      personalData.classList.add('basket-list')
       personalData.style.display = "block";
-      orderList.style.display = "none";
+      if (mql.matches) {
+        orderList.style.display = "none";
+    }
     })
 
     backOrderList.addEventListener('click', () => {
@@ -187,39 +134,42 @@ document.addEventListener('DOMContentLoaded', function () {
   //---------------------------Enter in Profile
 
 
-  const enterToProfile = document.getElementById('header-button__profile')
-  const popupEnterToProfile = document.querySelector('.enter-form-wrap')
-  const closePopupEnterToProfile = document.querySelector('.enter-form__close')
-  const enterForm = document.getElementById('enter-form')
+  const enterToProfile = document.getElementById('header-buttons__account')
+  const popupBlock = document.querySelector('.popup__block')
+  const popupClose = document.querySelector('.popup__close')
+  const popup = document.querySelector('.popup')
+  const body = document.body;
 
 
   window.onclick = function (event) {
-    if (event.target == enterForm) {
-      console.log(enterForm)
-      popupEnterToProfile.classList.remove("enter-form-wrap--open");
+    if (event.target == popup) {
+      console.log(popup)
+      popupBlock.classList.remove("popup__block--open");
+      popup.classList.remove("popup--open");
       const body = document.body;
       const scrollY = body.style.top;
-      body.style.overflow = 'auto';
       body.style.top = '';
+      body.classList.remove('stop-scroll');
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
     }
   }
 
   enterToProfile.addEventListener('click', () => {
-    popupEnterToProfile.classList.add("enter-form-wrap--open")
+    popupBlock.classList.add("popup__block--open")
+    popup.classList.add("popup--open");
     const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
     const body = document.body;
-    body.style.overflow = 'hidden';
     body.style.top = `-${scrollY}`;
+    body.classList.add('stop-scroll');
 
-    closePopupEnterToProfile.addEventListener('click', () => {
-      popupEnterToProfile.classList.remove("enter-form-wrap--open")
+    popupClose.addEventListener('click', () => {
+      popupBlock.classList.remove("popup__block--open")
+      popup.classList.remove("popup--open");
       const body = document.body;
       const scrollY = body.style.top;
-      body.style.overflow = 'auto';
       body.style.top = '';
+      body.classList.remove('stop-scroll');
       window.scrollTo(0, parseInt(scrollY || '0') * -1);
-
     })
 
   })
@@ -228,105 +178,100 @@ document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
   });
 
+  //---------------------------Favorite & History Tabs
 
-      //---------------------------Favorite & History Tabs
+  if (location.pathname === "/account.html") {
+    console.log('account')
+  }
 
-if(location.pathname==="/account.html"){
-  console.log('account')
-}
-
-let tabs = (function () { 
-  let tabsControl = document.querySelectorAll('.favorite-history-tab'), 
-      tabsContent = document.querySelectorAll('.favorite-history__items'), 
+  let tabs = (function () {
+    let tabsControl = document.querySelectorAll('.favorite-history-tab'),
+      tabsContent = document.querySelectorAll('.favorite-history__items'),
       activeTab = tabsControl[0],
-      activeIndex = 0, 
+      activeIndex = 0,
       carret = document.querySelector('.favorite-history-carret'),
 
       init = () => {
-          activeTab.classList.add('favorite-history-tab__active');
-          tabsContent[activeIndex].classList.add('favorite-history-items-open');
+        activeTab.classList.add('favorite-history-tab__active');
+        tabsContent[activeIndex].classList.add('favorite-history-items-open');
 
-          setTimeout(() => {
-              setCarret();
-              carret.classList.add('favorite-history-carret--ready')
-          }, 200)
+        setTimeout(() => {
+          setCarret();
+          carret.classList.add('favorite-history-carret--ready')
+        }, 200)
 
-          tabsControl.forEach((item, index) => {
-              item.addEventListener('click', () => {
-                  showTab(index);
-              })
-          });
+        tabsControl.forEach((item, index) => {
+          item.addEventListener('click', () => {
+            showTab(index);
+          })
+        });
       },
 
       setCarret = () => {
-          carret.style.width = window.getComputedStyle(activeTab.firstElementChild).getPropertyValue("width")
-          let offset = 0;
+        carret.style.width = window.getComputedStyle(activeTab.firstElementChild).getPropertyValue("width")
+        let offset = 0;
 
-          [...tabsControl].slice(0, activeIndex).forEach(i => {
-              offset += i.offsetWidth + +window.getComputedStyle(i).marginRight.match(/\d/g).join('') 
-          })
+        [...tabsControl].slice(0, activeIndex).forEach(i => {
+          offset += i.offsetWidth + +window.getComputedStyle(i).marginRight.match(/\d/g).join('')
+        })
 
-          carret.style.transform = `translate(${offset}px)`
+        carret.style.transform = `translate(${offset}px)`
       },
 
       showTab = (i) => {
-          activeIndex = i;
-          activeTab = tabsControl[activeIndex];
+        activeIndex = i;
+        activeTab = tabsControl[activeIndex];
 
-          setCarret();
+        setCarret();
 
-          [...tabsControl, ...tabsContent].forEach(i => {
-              i.classList.remove('favorite-history-tab__active', 'favorite-history-items-open');
-          });
+        [...tabsControl, ...tabsContent].forEach(i => {
+          i.classList.remove('favorite-history-tab__active', 'favorite-history-items-open');
+        });
 
-          activeTab.classList.add('favorite-history-tab__active');
-          tabsContent[activeIndex].classList.add('favorite-history-items-open');
+        activeTab.classList.add('favorite-history-tab__active');
+        tabsContent[activeIndex].classList.add('favorite-history-items-open');
       };
 
-  return {
+    return {
       init
+    }
+  })();
+
+  if (location.pathname === "/account.html") {
+    console.log('account')
+    tabs.init();
   }
-})();
 
-if(location.pathname==="/account.html"){
-  console.log('account')
-  tabs.init();
-}
+  //---------------------------Vacancy Tabs
 
-      //---------------------------Vacancy Tabs
+  let spoilerVacBut = document.querySelectorAll(".vacancy-item-box");
+  let spoilerBox = document.querySelectorAll(".vacancy-item-box");
+  let spoilerPlus = document.querySelectorAll(".vacancy-spoiler__plus");
+  let header = document.querySelectorAll(".vacancy-item-header");
 
-let spoilerVacBut = document.querySelectorAll(".vacancy-item-box");
-let spoilerBox = document.querySelectorAll(".vacancy-item-box");
-let spoilerPlus = document.querySelectorAll(".vacancy-spoiler__plus");
-let header = document.querySelectorAll(".vacancy-item-header");
+  spoilerVacBut.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      spoilerBox.forEach((item, index) => {
+        item.classList.add('vacancy-item-box__close')
+        spoilerPlus[index].classList.add('vacancy-spoiler__plus--active')
+        header[index].classList.add('vacancy-item-header__close')
 
-spoilerVacBut.forEach((item,index) =>{
-  item.addEventListener('click', () =>{
-    spoilerBox.forEach((item,index) =>{
-      item.classList.add('vacancy-item-box__close')
-      spoilerPlus[index].classList.add('vacancy-spoiler__plus--active')
-      header[index].classList.add('vacancy-item-header__close')
-   
+      })
+      spoilerBox[index].classList.toggle('vacancy-item-box__close')
+      spoilerPlus[index].classList.remove('vacancy-spoiler__plus--active')
+      header[index].classList.remove('vacancy-item-header__close')
     })
-    spoilerBox[index].classList.toggle('vacancy-item-box__close')
-    spoilerPlus[index].classList.remove('vacancy-spoiler__plus--active')
-    header[index].classList.remove('vacancy-item-header__close')
   })
-})
 
+  //---------------------------Menu Open
 
+  let menuButton = document.querySelector(".menu-btn");
 
-      //---------------------------Menu Open
+  let menu= document.querySelector(".mobile-menu__wrap");
 
-      let menuButton = document.querySelector(".header-menu");
-      
-      // let menuWrap = document.querySelector(".menu");
-      let menu = document.querySelector(".menu-box");
-      
-        menuButton.addEventListener('click', () =>{
-          // menuWrap.classList.toggle('menu--open')
-          menu.classList.toggle('menu-box--open')
-        })
+  menuButton.addEventListener('click', () => {
+    menu.classList.toggle('mobile-menu__wrap--open')
+  })
 
 });
 

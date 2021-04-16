@@ -1,93 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('~header.html')
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-    type="text/css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <title>Меню</title>
-</head>
+<div class="container-content container-content--transparent">
+  <h1 class="title-26 mg-bt-30">Контакты</h1>
+  <div class="container-content">
+    <div class="contacts-box">
+      <div class="contacts__items mg-r-20">
 
-<body>
-
-  <div class="container-main">
-    @@include('~header.html')
- 
-    <div class="container-content container-content--transparent">
-      <h1 class="mg-bt-30">Контакты</h1>
-        <div class="container-content">
-          <div class="contacts-box">
-            <div class="contacts__items mg-r-20">
-              
-              <div class="contacts__item-box">
-               <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/location.svg" alt="">
-               <div class="footer-center-address-phone">
-                <p class="footer-center-address-phone__title">АДРЕС</p>
-                <p class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</p>
-              </div>
-              </div>
-
-              <div class="contacts__item-box">
-                <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/phone.svg" alt="">
-                <div class="footer-center-address-phone">
-                 <p class="footer-center-address-phone__title">ТЕЛЕФОН</p>
-                 <p class="footer-center-address-phone__name">7 (495) 450-600</p>
-                 <p class="footer-center-address-phone__name">7 (495) 450-600</p>
-               </div>
-               </div>
-
-               <div class="contacts__item-box">
-                <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/email.svg" alt="">
-                <div class="footer-center-address-phone">
-                 <p class="footer-center-address-phone__title">E-MAIL</p>
-                 <p>info@oishi-sushi.ru</p>
-               </div>
-               </div>
-
-               <div class="contacts__item-box">
-                <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/time.svg" alt="">
-                <div class="footer-center-address-phone">
-                 <p class="footer-center-address-phone__title">РЕЖИМ РАБОТЫ</p>
-                 <p class="footer-center-address-phone__name">Ежедневно с 9:00 до 00:00</p>
-               </div>
-               </div>
-
-            </div>
-            <div class="contacts-map">
-              <div id="googleMap"></div>
-              
-
-              <script>function myMap() {
-
-                const sar = { lat: 56.479772, lng: 53.817661 };
-                var mapProp= {
-                    center:new google.maps.LatLng(51.508742,-0.120850),
-                    zoom:5,
-                };
-                var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                const marker = new google.maps.Marker({
-              position: sar,
-              map: map,  });
-                }</script>
-
-            </div>
+        <div class="contacts__item-box">
+          <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/location.svg" alt="">
+          <div class="footer-center-address-phone">
+            <span class="footer-center-address-phone__title">АДРЕС</span>
+            <span class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</span>
+          </div>
         </div>
+
+        <div class="contacts__item-box">
+          <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/phone.svg" alt="">
+          <div class="footer-center-address-phone">
+            <span class="footer-center-address-phone__title">ТЕЛЕФОН</span>
+            <a href="tel:7495450600" class="footer-center-address-phone__name">7 (495) 450-600</a>
+            <a href="tel:7495450600" class="footer-center-address-phone__name">7 (495) 450-600</a>
+          </div>
+        </div>
+
+        <div class="contacts__item-box">
+          <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/email.svg" alt="">
+          <div class="footer-center-address-phone">
+            <span class="footer-center-address-phone__title">E-MAIL</span>
+            <a href="info@oishi-sushi.ru">info@oishi-sushi.ru</a>
+          </div>
+        </div>
+
+        <div class="contacts__item-box">
+          <img class="contacts__item-logo mg-r-30" src="./assets/img/contacts/time.svg" alt="">
+          <div class="footer-center-address-phone">
+            <span class="footer-center-address-phone__title">РЕЖИМ РАБОТЫ</span>
+            <span class="footer-center-address-phone__name">Ежедневно с 9:00 до 00:00</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="contacts-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2182.149755119145!2d53.20523841625182!3d56.84337508085902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43e139379de10d3b%3A0xd943650bde54257e!2sUlitsa%20Lenina%2C%2010%2C%20Izhevsk%2C%20Udmurtskaja%20Respublika%2C%20426008!5e0!3m2!1sen!2sru!4v1618255402196!5m2!1sen!2sru"
+          id="googleMap" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
       </div>
     </div>
-    @@include('~footer.html')
-
   </div>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApt2nP2xfyeGsW-6SFxJW_1dLC-AFMSIU&callback=myMap"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/js/swiper-main.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
-
-</html>
+</div>
+@@include('~footer.html')

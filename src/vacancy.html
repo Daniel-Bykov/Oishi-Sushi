@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
-    type="text/css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <title>Меню</title>
-</head>
+@@include('~header.html')
 
-<body>
+<div class="container-content container-content--transparent mg-bt-0">
 
-  <div class="container-main">
-    @@include('~header.html')
- 
-    <div class="container-content container-content--transparent">
-
-      <div class="vacancy-box">
-        <div class="container-content">
-          <div class="vacancy"> 
-            <h1 class="vacancy-header">Вакансии</h1>
-            <div class="vacancy-item-box vacancy-item-box__active">
-              <button class="vacancy-spoiler">
-                <div class="vacancy-spoiler__minus"></div>
-                <div class="vacancy-spoiler__plus"></div>
-              </button>
-              <h5 class="vacancy-item-header">Повар</h5>
-              <p class="vacancy-text">Задача организации, в особенности же новая модель организационной деятельности представляет собой интересный эксперимент проверки новых предложений. Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. </p>
-              <p class="vacancy-requirements mg-bt-10">Требования</p>
-              <li>опыт paбoты повaром oт 1 гoдa;</li>
-              <li>нaличиe медицинcкoй книжки или готовнoсть eе cделать;</li>
-              <li>жeланиe paботaть и рaзвивaться.</li>
-            </div>
-            <div class="vacancy-item-box vacancy-item-box__close">
-              <button class="vacancy-spoiler">
-                <div class="vacancy-spoiler__minus"></div>
-                <div class="vacancy-spoiler__plus vacancy-spoiler__plus--active"></div>
-              </button>
-              <h5 class="vacancy-item-header vacancy-item-header__close">Водитель Курьер</h5>
-              <p class="vacancy-text">Задача организации, в особенности же новая модель организационной деятельности представляет собой интересный эксперимент проверки новых предложений. Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. </p>
-              <p class="vacancy-requirements mg-bt-10">Требования</p>
-              <li>опыт paбoты повaром oт 1 гoдa;</li>
-              <li>нaличиe медицинcкoй книжки или готовнoсть eе cделать;</li>
-              <li>жeланиe paботaть и рaзвивaться.</li>
-            </div>
-            <div class="vacancy-item-box vacancy-item-box__close">
-              <button class="vacancy-spoiler">
-                <div class="vacancy-spoiler__minus"></div>
-                <div class="vacancy-spoiler__plus vacancy-spoiler__plus--active"></div>
-              </button>
-              <h5 class="vacancy-item-header vacancy-item-header__close">Менеджер по приему заказов</h5>
-              <p class="vacancy-text">Задача организации, в особенности же новая модель организационной деятельности представляет собой интересный эксперимент проверки новых предложений. Равным образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. </p>
-              <p class="vacancy-requirements mg-bt-10">Требования</p>
-              <li>опыт paбoты повaром oт 1 гoдa;</li>
-              <li>нaличиe медицинcкoй книжки или готовнoсть eе cделать;</li>
-              <li>жeланиe paботaть и рaзвивaться.</li>
-            </div>
+  <div class="vacancy-box">
+    <div class="container-content mg-bt-0">
+      <div class="vacancy">
+        <h1 class="title-26 vacancy-header">Вакансии</h1>
+        <div class="vacancy-item-box vacancy-item-box__active">
+          <button class="vacancy-spoiler">
+            <div class="vacancy-spoiler__minus"></div>
+            <div class="vacancy-spoiler__plus"></div>
+          </button>
+          <h5 class="title-20 vacancy-item-header">Повар</h5>
+          <p class="vacancy-text">Задача организации, в особенности же новая модель организационной деятельности
+            представляет собой интересный эксперимент проверки новых предложений. Равным образом сложившаяся структура
+            организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных
+            условий. </p>
+          <p class="title-roboto-12 mg-bt-10">Требования</p>
+          <ul class="vacancy-requirements">
+            <li class="vacancy__mark">опыт paбoты повaром oт 1 гoдa;</li>
+            <li class="vacancy__mark">нaличиe медицинcкoй книжки или готовнoсть eе cделать;</li>
+            <li class="vacancy__mark">жeланиe paботaть и рaзвивaться.</li>
+          </ul>
+          <div class="vacancy__button">
+            <button class="button">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="vacancy-item-box vacancy-item-box__close">
+          <button class="vacancy-spoiler">
+            <div class="vacancy-spoiler__minus"></div>
+            <div class="vacancy-spoiler__plus vacancy-spoiler__plus--active"></div>
+          </button>
+          <h5 class=" title-20 vacancy-item-header vacancy-item-header__close">Водитель Курьер</h5>
+          <p class="vacancy-text">Задача организации, в особенности же новая модель организационной деятельности
+            представляет собой интересный эксперимент проверки новых предложений. Равным образом сложившаяся структура
+            организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных
+            условий. </p>
+          <ul class="vacancy-requirements">
+            <li class="vacancy__mark">опыт paбoты повaром oт 1 гoдa;</li>
+            <li class="vacancy__mark">нaличиe медицинcкoй книжки или готовнoсть eе cделать;</li>
+            <li class="vacancy__mark">жeланиe paботaть и рaзвивaться.</li>
+          </ul>
+          <div class="vacancy__button">
+            <button class="button">Оставить заявку</button>
+          </div>
+        </div>
+        <div class="vacancy-item-box vacancy-item-box__close mg-bt-20">
+          <button class="vacancy-spoiler">
+            <div class="vacancy-spoiler__minus"></div>
+            <div class="vacancy-spoiler__plus vacancy-spoiler__plus--active"></div>
+          </button>
+          <h5 class="title-20 vacancy-item-header vacancy-item-header__close">Менеджер по приему заказов</h5>
+          <p class="vacancy-text">Задача организации, в особенности же новая модель организационной деятельности
+            представляет собой интересный эксперимент проверки новых предложений. Равным образом сложившаяся структура
+            организации влечет за собой процесс внедрения и модернизации существенных финансовых и административных
+            условий. </p>
+          <ul class="vacancy-requirements">
+            <li class="vacancy__mark">опыт paбoты повaром oт 1 гoдa;</li>
+            <li class="vacancy__mark">нaличиe медицинcкoй книжки или готовнoсть eе cделать;</li>
+            <li class="vacancy__mark">жeланиe paботaть и рaзвивaться.</li>
+          </ul>
+          <div class="vacancy__button">
+            <button class="button">Оставить заявку</button>
           </div>
         </div>
       </div>
-      </div>
-    @@include('~footer.html')
-
+    </div>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/js/swiper-main.min.js"></script>
-  <script src="./assets/js/script.js"></script>
-</body>
-
-</html>
+</div>
+@@include('~footer.html')

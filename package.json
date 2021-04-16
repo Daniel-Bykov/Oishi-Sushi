@@ -36,5 +36,8 @@
     "gulp-webp-html": "^1.0.2",
     "gulp-webpcss": "^1.1.1",
     "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0"
   }
 }

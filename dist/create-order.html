@@ -6,261 +6,344 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/reset.min.css">
+  <link rel="stylesheet" href="./assets/styles/style.min.css">
+  <link rel="stylesheet" href="./assets/styles/nice-select.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
     type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-  <title>Оформление заказа</title>
+  <title>Меню</title>
 </head>
 
 <body>
 
   <div class="container-main">
     <header class="header">
-  <div class="header__menu-block">
-    <button class="header-menu">
-      <div class="header-menu-burger">
-        <div class="header-menu-burger__line"></div>
-      </div>
-      <p class="header-menu__name">Меню</p>
-    </button>
-    <a href="index.html" class="header-logo">Oishi <p class="header-logo--yellow">Sushi</p>
-    </a>
-  </div>
 
-  <div class="header__links">
-    <a href="#" class="links__header">Условия доставки</a>
-    <a href="#" class="links__header">Акции</a>
-    <a href="vacancy.html" class="links__header">Вакансии</a>
-    <a href="contacts.html" class="links__header">Контакты</a>
-  </div>
-
-  <div class="header__right-block">
-    <div class="header-order-time mg-r-30">
-      <p class="header-order-time__title">Прием заказов</p>
-      <p class="header-order-time__time">9:00 - 00:00</p>
-    </div>
-    <div class="header-phone-number mg-r-30">
-      <div class="header-phone-number__icon"></div>
-      <a href="tel:7495450600" class="header-phone-number__number">7 (495) 450 - 600</a>
-    </div>
-    <a href="#" class="header-button" id="header-button__profile">
-      <div class="header-button__profile"></div>
-    </a>
-    <a href="#" class="header-button">
-      <div class="header-button__likes"></div>
-    </a>
-    <a href="create-order.html" class="header-button">
-      <p class="header-button__text header-text">770 ₽</p>
-      <div class="header-button__basket"></div>
-    </a>
-  </div>
-
-
-</header>
-
-
-<div class="enter-form-wrap">
-  <div class="enter-form__shadow" id="enter-form"></div>
-  <div class="enter-form" >
-
-    <button class="enter-form__close"></button>
-    <div class="enter-form-header">
-      <span class="tiles-item__title enter-form-title">Вход</span>
-      <a href="#" class="enter-form-reg">Регистрация</a>
-    </div>
-      <div class="personal-data__input-box">
-        <h3 class="mg-bt-5">Номер телефона</h3>
-        <input id="phone-number" type="text" class="personal-data__input" placeholder="+7 (___) ___ - __ - __" >
+      <div class="header__menu-btn">
+        <div class="menu-btn">
+          <div class="burger">
+            <div class="burger__lines"></div>
+          </div>
+          <span class="title-12 menu-btn__name">Меню</span>
+        </div>
+        <div class="header__logo">
+          <a href="index.html" class="logo">Oishi <span class="logo--yellow">Sushi</span></a>
+        </div>
       </div>
 
-      <div class="personal-data__input-box"  >
-        <h3 class="mg-bt-5"><label for="pwd">Пароль</label></h3>
-        <input type="password" id="pwd" name="pwd" minlength="8" class="personal-data__input"></div>
-        <a href="account.html" class="item-info-button item-box-button">
-          <span class="item-info-button__name">Войти</span>  </a>
-      
-        <div class="enter-form-footer">
-          <a href="#" class="footer-left__agree">Забыли пароль?</a>
+      <div class="header__menu-links">
+        <a href="#" class="menu-links__header">Условия доставки</a>
+        <a href="#" class="menu-links__header">Акции</a>
+        <a href="vacancy.html" class="menu-links__header">Вакансии</a>
+        <a href="contacts.html" class="menu-links__header">Контакты</a>
+      </div>
+
+      <div class="header__right-block">
+        <div class="order-time mg-r-30">
+          <span class="order-time__title title-12">Прием заказов</span>
+          <span class="order-time__time">9:00 - 00:00</span>
+        </div>
+        <div class="phone-number mg-r-30">
+          <div class="phone-number__icon"></div>
+          <a href="tel:7495450600" class="header__text">7 (495) 450 - 600</a>
+        </div>
+        <a href="#" class="header-buttons" id="header-buttons__account">
+          <div class="header-buttons__account"></div>
+        </a>
+        <a href="#" class="header-buttons">
+          <div class="header-buttons__likes"></div>
+        </a>
+        <div class="header-buttons__basket">
+          <a href="create-order.html" class="header-buttons">
+            <span class="header__text mg-r-10">465 ₽</span>
+            <div class="basket"></div>
+          </a>
         </div>
 
-  </div></div>
+      </div>
 
-  <div class="container-content menu">
-    <div class="menu-box">
-    <div class="header__links menu-box__links">
-    <a href="index.html" class="header-logo mg-bt-50">Oishi <p class="header-logo--yellow">Sushi</p></a>
-    <a href="index.html" class="links__header menu-box-link">Главная страница</a>
-    <a href="menu.html" class="links__header menu-box-link">Посмотреть меню</a>
-    <a href="#" class="links__header menu-box-link">Условия доставки</a>
-    <a href="#" class="links__header menu-box-link">Акции</a>
-    <a href="vacancy.html" class="links__header menu-box-link">Вакансии</a>
-    <a href="contacts.html" class="links__header menu-box-link">Контакты</a>
-  </div>
+    </header>
 
-  <div class="header__right-block menu-box__right-block">
-    <div class="header-order-time">
-      <p class="header-order-time__title">Прием заказов</p>
-      <p class="header-order-time__time">9:00 - 00:00</p>
+    <div class="popup">
+      <div class="popup__block" style="max-width: 500px;">
+        <div class="popup__close"></div>
+        <div class="enter-form__header">
+          <span class="title-26">Вход</span>
+          <a href="#" class="title-16 link">Регистрация</a>
+        </div>
+
+        <div class="personal-data__input-box">
+          <h3 class="title-12 mg-bt-5">Номер телефона</h3>
+          <input id="phone-number" type="text" class="personal-data__input" placeholder="+7 (___) ___ - __ - __">
+        </div>
+
+        <div class="personal-data__input-box">
+          <h3 class="title-12 mg-bt-5"><label for="pwd">Пароль</label></h3>
+          <input type="password" id="pwd" name="pwd" minlength="8" class="personal-data__input">
+        </div>
+
+        <div class="enter-form__button-wrap">
+          <div class="enter-form__button-box">
+            <a href="account.html" class="button">
+              <span>Войти</span></a>
+          </div>
+        </div>
+
+        <div class="enter-form-footer">
+          <a href="#" class="title-12 link">Забыли пароль?</a>
+        </div>
+      </div>
     </div>
-    <div class="header-phone-number">
-      <div class="header-phone-number__icon"></div>
-      <a href="tel:7495450600" class="header-phone-number__number">7 (495) 450 - 600</a>
-    </div></div>
+    <div class="mobile-menu__wrap">
+      <div class="container-content menu">
+
+        <div class="mobile-menu">
+          <div class="mobile-menu__logo">
+            <a href="index.html" class="logo">Oishi <span class="logo--yellow ">Sushi</span></a>
+          </div>
+          <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-menu__item">Главная страница</a>
+            <a href="menu.html" class="mobile-menu__item">Наше меню</a>
+            <a href="#" class="mobile-menu__item">Условия доставки</a>
+            <a href="#" class="mobile-menu__item">Акции</a>
+            <a href="vacancy.html" class="mobile-menu__item">Вакансии</a>
+            <a href="contacts.html" class="mobile-menu__item">Контакты</a>
+          </div>
+
+          <div class="mobile-menu-info">
+            <div class="mobile-menu-info__work-time">
+              <span class="">Прием заказов</span>
+              <span class="">9:00 - 00:00</span>
+            </div>
+            <div class="mobile-menu-info__phone">
+              <div class="phone-number__icon"></div>
+              <a href="tel:7495450600" class="">7 (495) 450 - 600</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container-content container-content--transparent ">
+  <h1 class="title-26 mg-bt-30">Оформление заказа</h1>
+
+  <div class="order">
+
+    <div class="basket-list">
+
+      <div class="container-content mg-bt-0 basket-list-wrap">
+
+<div style="width: 100%;">
+          <div class="basket-list-box">
+
+            <div class="basket-list-box-left">
+              <div class="basket-list__icons">
+                <div class="product-card-icons__favorite"></div>
+              </div>
+              <img src="./assets/img/favorite/item/1p.png" alt="" class="basket-list__image">
+            </div>
+
+            <div class="basket-list-box-center">
+              <div class="basket-list-info">
+                <span class="product-description__type">Ролл</span>
+                <span class="product-description__name">Калифорния</span>
+              </div>
+
+              <div class="basket-list__counter-price-wrap">
+                <div class="basket-list-counter">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
+                </div>
+
+                <div class="basket-list-price">
+                  <span>320 ₽</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="basket-list-box-right">
+              <button class="basket-list-cancel"></button>
+            </div>
+
+          </div>
+
+          <div class="basket-list-box">
+
+            <div class="basket-list-box-left">
+              <div class="basket-list__icons">
+                <div class="product-card-icons__favorite"></div>
+              </div>
+
+              <img src="./assets/img/favorite/item/1p.png" alt="" class="basket-list__image">
+            </div>
+
+            <div class="basket-list-box-center">
+              <div class="basket-list-info">
+                <span class="product-description__type">Ролл</span>
+                <span class="product-description__name">Калифорния</span>
+              </div>
+
+
+              <div class="basket-list__counter-price-wrap">
+                <div class="basket-list-counter">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
+                </div>
+
+                <div class="basket-list-price">
+                  <span>320 ₽</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="basket-list-box-right">
+              <button class="basket-list-cancel"></button>
+            </div>
+
+          </div>
+          <div class="basket-list-box">
+
+            <div class="basket-list-box-left">
+              <div class="basket-list__icons">
+                <div class="product-card-icons__favorite"></div>
+              </div>
+
+              <img src="./assets/img/favorite/item/1p.png" alt="" class="basket-list__image">
+            </div>
+
+            <div class="basket-list-box-center">
+              <div class="basket-list-info">
+                <span class="product-description__type">Ролл</span>
+                <span class="product-description__name">Калифорния</span>
+              </div>
+
+
+              <div class="basket-list__counter-price-wrap">
+                <div class="basket-list-counter">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
+                </div>
+
+                <div class="basket-list-price">
+                  <span>320 ₽</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="basket-list-box-right">
+              <button class="basket-list-cancel"></button>
+            </div>
+
+          </div>
+        </div>
+        <div class="basket-list-total">
+          <span class="basket-list-total__name">Итого:</span>
+          <span class="basket-list-total__value">1140 ₽</span>
+        </div>
+        <div class="basket-list__continue">
+          <button class="button">Далее</button>
+        </div>
+      </div>
+    </div>
+    <div class="order-personal-data">
+      <div class="container-content mg-bt-0">
+        <div class="fields" id="fields">
+
+          <div class="fields__inputs">
+            <div class="personal-data">
+              <h2 class="title-14 mg-bt-25">Личные данные</h2>
+
+              <div class="personal-data__input-box">
+                <h3 class="title-12 mg-bt-5">Ваше имя <span class="personal-data__important-filed-mark">*</span></h3>
+                <input id="user-name" type="text" class="personal-data__input" placeholder="Имя">
+              </div>
+
+              <div class="personal-data__input-box">
+                <h3 class="title-12 mg-bt-5">Номер телефона<span class="personal-data__important-filed-mark">*</span>
+                </h3>
+                <input id="phone-number" type="text" class="personal-data__input" placeholder="Номер">
+              </div>
+
+              <div class="comment">
+                <h3 class="title-12 mg-bt-5">Комментарий к заказу</h3>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Например: нет домофона"></textarea>
+              </div>
+            </div>
+
+            <div class="delivery">
+              <h2 class="title-14 mg-bt-25">Доставка</h2>
+              <div class="save-street">
+                <h3 class="title-12 mg-bt-5">Выберите адрес</h3>
+                <select>
+                  <option data-display="Сохраненные адреса">Сохраненные адреса</option>
+                  <option value="1">ул. Ленина 37, каб. 316</option>
+                  <option value="2">ул. Разочарования, д. 0</option>
+                  <option value="3">ул. Вилли Токарева, д.15</option>
+                  <option value="4">ул. Шарканский Пёс, д.19, кв. 39</option>
+                </select>
+              </div>
+              <div class="personal-data__input-box">
+                <h3 class="title-12 mg-bt-5">Улица <span class="personal-data__important-filed-mark">*</span></h3>
+                <input id="street" type="text" class="personal-data__input" placeholder="Укажите улицу доставки">
+              </div>
+              <div class="personal-data__input-box">
+                <h3 class="title-12 mg-bt-5">Номер дома <span class="personal-data__important-filed-mark">*</span></h3>
+                <input id="home" type="text" class="personal-data__input" placeholder="Номер дома">
+              </div>
+              <div class="personal-data__input-box">
+                <h3 class="title-12 mg-bt-5">Номер квартиры <span class="personal-data__important-filed-mark">*</span>
+                </h3>
+                <input id="apartment" type="text" class="personal-data__input" placeholder="Номер квартиры">
+              </div>
+            </div>
+          </div>
+          <div class="personal-data-agree">
+            <input type="checkbox" class="check__element" id="privacy-policy" name="privacy-policy" value="yes">
+            <label for="privacy-policy"><a href="#">Я согласен с<span style="color:#f0af3b; margin-left:5px;">политикой
+                  обработки персональных данных</span></a> </label>
+
+            <div class="delivery-buttons">
+
+              <div class="create-order-button create-order-button--back">
+                <button class="button">
+                  Назад</button>
+              </div>
+
+              <div class="create-order-button">
+                <button class="button">Оформить заказ</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-
-    <div class="container-content container-content--transparent">
-      <h1 class="mg-bt-30">Оформление заказа</h1>
-
-      <div class="order">
-
-        <div class="order-list">
-
-          <div class="container-content">
-
-            <div class="order-item">
-              <div class="order-box">
-
-                <div class="order-box-left">
-                  <div class="order-item__icons">
-                    <button class="item-box-icons__favorite"></button>
-                  </div>
-
-                  <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image order-image">
-                </div>
-
-                <div class="order-box-center">
-                  <div class="order-item-info">
-                    <p class="item-text__type item-box-type">Ролл</p>
-                    <p class="item-text__name item-box-name">Калифорния</p>
-                  </div>
-
-
-                  <div class="order-counter-price">
-                    <div class="item-info__counter order-item-counter">
-                      <button class="item-info__plus order-item-counter__plus"></button>
-                      <div class="item-info__counter-quantity">1</div>
-                      <button class="item-info__minus order-item-counter__minus"></button>
-                    </div>
-
-                    <div class="order-item-price">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="order-box-right">
-                  <button class="order-item-cancel">
-                    <img src="./assets/img/create-order/cancel.svg" alt="">
-                  </button>
-                </div>
-
-              </div>
-              <div class="order-item-total">
-                <span class="order-item-total__name">Итого:</span>
-                <span class="order-item-total__value">1140 ₽</span>
-              </div>
-
-              <button class="order-continue">Далее</button>
-            </div>
-
-
-          </div>
-        </div>
-        <div class="order-personal-data">
-          <div class="container-content">
-            <div class="fields" id="fields">
-
-              <div class="fields__inputs">
-                <div class="personal-data">
-                  <h2 class="mg-bt-25">Личные данные</h2>
-
-                  <div class="personal-data__input-box" >
-                     <h3 class="mg-bt-5">Ваше имя <span class="personal-data__important-filed-mark">*</span></h3>
-                    <input id="user-name" type="text" class="personal-data__input" placeholder="Имя">
-                  </div>
-
-                  <div class="personal-data__input-box">
-                     <h3 class="mg-bt-5">Номер телефона<span class="personal-data__important-filed-mark">*</span></h3>
-                    <input id="phone-number" type="text" class="personal-data__input" placeholder="Номер" >
-                  </div>
-
-                  <div class="comment">
-                     <h3 class="mg-bt-5">Комментарий к заказу</h3>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Например: нет домофона"></textarea>
-                  </div>
-                </div>
-
-                <div class="delivery">
-                  <h2 class="mg-bt-25">Доставка</h2>
-                  <div class="save-street">
-                     <h3 class="mg-bt-5">Выберите адрес</h3>
-                    <div class="save-street-list">
-                    <div class="save-street-list__current">
-                        <span class="save-street-list__text">Сохраненные адреса</span>
-                        <img class="save-street-list__drop-down-ico" src="./assets/img/create-order/drop-down.svg" alt="">
-                    </div>
-                 </div>
-                 <div class="save-street-box">
-                 <div class="save-street-list__options"> 
-                  
-                  <span class="save-street-list__text save-street-list__text--options">г. Ижевск, ул.Пушкинская 252, кв. 28</span>
-                  <span class="save-street-list__text save-street-list__text--options">г. Ижевск, ул.Ленина 37, каб. 316</span>
-                  <span class="save-street-list__text save-street-list__text--options">г. Ижевск, ул.Красного Террора 15, кв. 17</span>
-                  <span class="save-street-list__text save-street-list__text--options">г. Ижевск, ул.Красного Террора 15, кв. 17</span>
-                  <span class="save-street-list__text save-street-list__text--options">г. Ижевск, ул.Красного Террора 15, кв. 17</span>
-                  <span class="save-street-list__text save-street-list__text--options">Указать другой адрес</span>
-                </div></div>  
-                  </div>
-                  <div class="personal-data__input-box"  >
-                     <h3 class="mg-bt-5">Улица <span class="personal-data__important-filed-mark">*</span></h3>
-                    <input id="street" type="text" class="personal-data__input" placeholder="Укажите улицу доставки"></div>
-                  <div class="personal-data__input-box"  >
-                     <h3 class="mg-bt-5">Номер дома <span class="personal-data__important-filed-mark">*</span></h3>
-                    <input id="home" type="text" class="personal-data__input" placeholder="Номер дома"></div>
-                  <div class="personal-data__input-box"  >
-                     <h3 class="mg-bt-5">Номер квартиры <span class="personal-data__important-filed-mark">*</span></h3>
-                    <input id="apartment" type="text" class="personal-data__input" placeholder="Номер квартиры"></div>
-                </div>
-              </div>
-              <div class="personal-data-agree">
-                <input type="checkbox" class="check__element" id="privacy-policy" name="privacy-policy" value="yes">
-                <label for="privacy-policy"><span>Я согласен с <span style="color:#f0af3b; margin-left:5px;">политикой обработки персональных данных</span></span> </label>
-
-                <div class="delivery-buttons">
-                  <button class="create-order-button create-order-button--back">
-                    Назад</button>
-
-                  <button class="create-order-button">
-                    Оформить заказ</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer class="container-content container-content--footer">
+<footer class="container-content mg-t-60 mg-b-0">
   <div class="footer">
     <div class="footer-left">
-      <p class="footer-left__rights">© 2017 OishīSushi</p>
-      <p class="footer-left__agree">Согласие на обработку персональных данных</p>
+      <span class="footer-left__rights">© 2017 OishīSushi</span>
+      <a href="#" class="footer-left__agree">Согласие на обработку персональных данных</a>
     </div>
     <div class="footer-center">
       <div class="footer-center-address-phone">
-        <p class="footer-center-address-phone__title">АДРЕС</p>
-        <p class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</p>
+        <spam class="footer-center-address-phone__title">АДРЕС</spam>
+        <span class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</span>
       </div>
       <div class="footer-center-address-phone">
-        <p class="footer-center-address-phone__title">ТЕЛЕФОН</p>
+        <span class="footer-center-address-phone__title">ТЕЛЕФОН</span>
         <div class="footer-center-address-phone__name-callback">
           <a href="tel:7495450600" class="footer-center-address-phone__name">7 (495) 450 - 600</a>
-          <p class="footer-left__agree">Обратная свзяь</p>
+          <a href="#" class="footer-left__agree">Обратная свзяь</a>
         </div>
       </div>
     </div>
@@ -271,13 +354,18 @@
       <a href="#" class="footer-social"> <img src="./assets/img/footer/social/inst.svg" alt=""> </a>
     </div>
   </div>
+</footer>
+</div>
 
-
-  </div>
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/js/swiper-main.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApt2nP2xfyeGsW-6SFxJW_1dLC-AFMSIU&callback=myMap"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/jquery.nice-select.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/swiper-main.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>

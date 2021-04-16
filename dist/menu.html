@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./assets/styles/reset.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/reset.min.css">
+  <link rel="stylesheet" href="./assets/styles/style.min.css">
+  <link rel="stylesheet" href="./assets/styles/nice-select.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
     type="text/css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,1044 +20,425 @@
 
   <div class="container-main">
     <header class="header">
-  <div class="header__menu-block">
-    <button class="header-menu">
-      <div class="header-menu-burger">
-        <div class="header-menu-burger__line"></div>
-      </div>
-      <p class="header-menu__name">Меню</p>
-    </button>
-    <a href="index.html" class="header-logo">Oishi <p class="header-logo--yellow">Sushi</p>
-    </a>
-  </div>
 
-  <div class="header__links">
-    <a href="#" class="links__header">Условия доставки</a>
-    <a href="#" class="links__header">Акции</a>
-    <a href="vacancy.html" class="links__header">Вакансии</a>
-    <a href="contacts.html" class="links__header">Контакты</a>
-  </div>
-
-  <div class="header__right-block">
-    <div class="header-order-time mg-r-30">
-      <p class="header-order-time__title">Прием заказов</p>
-      <p class="header-order-time__time">9:00 - 00:00</p>
-    </div>
-    <div class="header-phone-number mg-r-30">
-      <div class="header-phone-number__icon"></div>
-      <a href="tel:7495450600" class="header-phone-number__number">7 (495) 450 - 600</a>
-    </div>
-    <a href="#" class="header-button" id="header-button__profile">
-      <div class="header-button__profile"></div>
-    </a>
-    <a href="#" class="header-button">
-      <div class="header-button__likes"></div>
-    </a>
-    <a href="create-order.html" class="header-button">
-      <p class="header-button__text header-text">770 ₽</p>
-      <div class="header-button__basket"></div>
-    </a>
-  </div>
-
-
-</header>
-
-
-<div class="enter-form-wrap">
-  <div class="enter-form__shadow" id="enter-form"></div>
-  <div class="enter-form" >
-
-    <button class="enter-form__close"></button>
-    <div class="enter-form-header">
-      <span class="tiles-item__title enter-form-title">Вход</span>
-      <a href="#" class="enter-form-reg">Регистрация</a>
-    </div>
-      <div class="personal-data__input-box">
-        <h3 class="mg-bt-5">Номер телефона</h3>
-        <input id="phone-number" type="text" class="personal-data__input" placeholder="+7 (___) ___ - __ - __" >
+      <div class="header__menu-btn">
+        <div class="menu-btn">
+          <div class="burger">
+            <div class="burger__lines"></div>
+          </div>
+          <span class="title-12 menu-btn__name">Меню</span>
+        </div>
+        <div class="header__logo">
+          <a href="index.html" class="logo">Oishi <span class="logo--yellow">Sushi</span></a>
+        </div>
       </div>
 
-      <div class="personal-data__input-box"  >
-        <h3 class="mg-bt-5"><label for="pwd">Пароль</label></h3>
-        <input type="password" id="pwd" name="pwd" minlength="8" class="personal-data__input"></div>
-        <a href="account.html" class="item-info-button item-box-button">
-          <span class="item-info-button__name">Войти</span>  </a>
-      
-        <div class="enter-form-footer">
-          <a href="#" class="footer-left__agree">Забыли пароль?</a>
+      <div class="header__menu-links">
+        <a href="#" class="menu-links__header">Условия доставки</a>
+        <a href="#" class="menu-links__header">Акции</a>
+        <a href="vacancy.html" class="menu-links__header">Вакансии</a>
+        <a href="contacts.html" class="menu-links__header">Контакты</a>
+      </div>
+
+      <div class="header__right-block">
+        <div class="order-time mg-r-30">
+          <span class="order-time__title title-12">Прием заказов</span>
+          <span class="order-time__time">9:00 - 00:00</span>
+        </div>
+        <div class="phone-number mg-r-30">
+          <div class="phone-number__icon"></div>
+          <a href="tel:7495450600" class="header__text">7 (495) 450 - 600</a>
+        </div>
+        <a href="#" class="header-buttons" id="header-buttons__account">
+          <div class="header-buttons__account"></div>
+        </a>
+        <a href="#" class="header-buttons">
+          <div class="header-buttons__likes"></div>
+        </a>
+        <div class="header-buttons__basket">
+          <a href="create-order.html" class="header-buttons">
+            <span class="header__text mg-r-10">465 ₽</span>
+            <div class="basket"></div>
+          </a>
         </div>
 
-  </div></div>
+      </div>
 
-  <div class="container-content menu">
-    <div class="menu-box">
-    <div class="header__links menu-box__links">
-    <a href="index.html" class="header-logo mg-bt-50">Oishi <p class="header-logo--yellow">Sushi</p></a>
-    <a href="index.html" class="links__header menu-box-link">Главная страница</a>
-    <a href="menu.html" class="links__header menu-box-link">Посмотреть меню</a>
-    <a href="#" class="links__header menu-box-link">Условия доставки</a>
-    <a href="#" class="links__header menu-box-link">Акции</a>
-    <a href="vacancy.html" class="links__header menu-box-link">Вакансии</a>
-    <a href="contacts.html" class="links__header menu-box-link">Контакты</a>
-  </div>
+    </header>
 
-  <div class="header__right-block menu-box__right-block">
-    <div class="header-order-time">
-      <p class="header-order-time__title">Прием заказов</p>
-      <p class="header-order-time__time">9:00 - 00:00</p>
+    <div class="popup">
+      <div class="popup__block" style="max-width: 500px;">
+        <div class="popup__close"></div>
+        <div class="enter-form__header">
+          <span class="title-26">Вход</span>
+          <a href="#" class="title-16 link">Регистрация</a>
+        </div>
+
+        <div class="personal-data__input-box">
+          <h3 class="title-12 mg-bt-5">Номер телефона</h3>
+          <input id="phone-number" type="text" class="personal-data__input" placeholder="+7 (___) ___ - __ - __">
+        </div>
+
+        <div class="personal-data__input-box">
+          <h3 class="title-12 mg-bt-5"><label for="pwd">Пароль</label></h3>
+          <input type="password" id="pwd" name="pwd" minlength="8" class="personal-data__input">
+        </div>
+
+        <div class="enter-form__button-wrap">
+          <div class="enter-form__button-box">
+            <a href="account.html" class="button">
+              <span>Войти</span></a>
+          </div>
+        </div>
+
+        <div class="enter-form-footer">
+          <a href="#" class="title-12 link">Забыли пароль?</a>
+        </div>
+      </div>
     </div>
-    <div class="header-phone-number">
-      <div class="header-phone-number__icon"></div>
-      <a href="tel:7495450600" class="header-phone-number__number">7 (495) 450 - 600</a>
-    </div></div>
+    <div class="mobile-menu__wrap">
+      <div class="container-content menu">
+
+        <div class="mobile-menu">
+          <div class="mobile-menu__logo">
+            <a href="index.html" class="logo">Oishi <span class="logo--yellow ">Sushi</span></a>
+          </div>
+          <div class="mobile-menu-links">
+            <a href="index.html" class="mobile-menu__item">Главная страница</a>
+            <a href="menu.html" class="mobile-menu__item">Наше меню</a>
+            <a href="#" class="mobile-menu__item">Условия доставки</a>
+            <a href="#" class="mobile-menu__item">Акции</a>
+            <a href="vacancy.html" class="mobile-menu__item">Вакансии</a>
+            <a href="contacts.html" class="mobile-menu__item">Контакты</a>
+          </div>
+
+          <div class="mobile-menu-info">
+            <div class="mobile-menu-info__work-time">
+              <span class="">Прием заказов</span>
+              <span class="">9:00 - 00:00</span>
+            </div>
+            <div class="mobile-menu-info__phone">
+              <div class="phone-number__icon"></div>
+              <a href="tel:7495450600" class="">7 (495) 450 - 600</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container-content">
+  <div class="filter">
+
+    <div class="filter-mobile">
+      <span class="filter-title">Фильтр</span>
+      <button class="filter-drop-down">
+        <span class="filter-current">Ролы</span>
+        <img class="filter-drop-down__ico" src="./assets/img/favorite/drop-down.svg" alt="">
+      </button>
+    </div>
+
+    <div class="filter-type">
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <span class="">Ролы</span>
+      </button>
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <span class="">Сеты</span>
+      </button>
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <span class="">Запеченные ролы</span>
+      </button>
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <span class="">Воки</span>
+      </button>
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <span class="">Супы</span>
+      </button>
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <span class="">Напитки</span>
+      </button>
+    </div>
+    <div class="filter-feature">
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <img class="filter-button-ico" src="./assets/img/favorite/star.svg" alt="">
+        <span class=""> Популярное</span>
+      </button>
+
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <img class="filter-button-ico" src="./assets/img/favorite/veg.svg" alt="">
+        <span class=""> Вегетарианское</span>
+      </button>
+
+      <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
+        <img class="filter-button-ico" src="./assets/img/favorite/hot.svg" alt="">
+        <span class=""> Острое</span>
+      </button>
+
+    </div>
   </div>
 </div>
 
-    <div class="container-content">
-      <div class="filter">
+<div class="container-content container-content--transparent">
+  <div class="row">
+    <div class="col-xs">
+      <div class="box">
+        <div class="product-card aic">
+          <div class="product-card__pictures">
+            <div class="product-card-icons">
+              <div class="favorite"></div>
+            </div>
+            <img src="./assets/img/favorite/item/1p.png" alt="" class="product-card-image">
+            <div class="add-like">
+              <img src="./assets/img/favorite/like.svg" alt="" class="">
+              <span class="add-like__counter">54</span>
+            </div>
+          </div>
 
-        <div class="filter-mobile">
-          <span class="filter-title">Фильтр</span>
-          <button class="filter-drop-down">
-            <span class="filter-current">Ролы</span>
-            <img class="filter-drop-down__ico" src="./assets/img/favorite/drop-down.svg" alt="">
-          </button>
-        </div>
+          <div class="product-card__info">
+            <div class="product-description">
+              <span class="product-description__type">Ролл</span>
+              <span class="product-description__name">Калифорния</span>
+              <span class="product-description__composition">Нори, креветка, авокадо,
+                огурец</span>
+            </div>
 
-        <div class="filter-type">
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <p class="">Ролы</p>
-          </button>
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <p class="">Сеты</p>
-          </button>
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <p class="">Запеченные ролы</p>
-          </button>
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <p class="">Воки</p>
-          </button>
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <p class="">Супы</p>
-          </button>
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <p class="">Напитки</p>
-          </button>
-        </div>
-        <div class="filter-feature">
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <img class="filter-button-ico" src="./assets/img/favorite/star.svg" alt="">
-            <p class=""> Популярное</p>
-          </button>
+            <div class="product-card__price-quantity">
+              <div class="product-card__price">
+                <div class="price__rectangle-start"></div>
+                <div class="price__rectangle-flex">
+                  <span class="price">320 ₽</span>
+                </div>
+              </div>
+              <div class="quantity">260 гр / 6 шт.</div>
+            </div>
 
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <img class="filter-button-ico" src="./assets/img/favorite/veg.svg" alt="">
-            <p class=""> Вегетарианское</p>
-          </button>
-
-          <button class="filter-type__button"><img class="act" src="./assets/img/favorite/active.svg" alt="">
-            <img class="filter-button-ico" src="./assets/img/favorite/hot.svg" alt="">
-            <p class=""> Острое</p>
-          </button>
-
+            <div class="button-box">
+              <div class="counter">
+                <div class="counter-info">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
+                </div>
+              </div>
+              <div class="product-card__button">
+                <button class="button button">
+                  <span class="mg-r-10">Добавить к заказу
+                  </span>
+                  <div class="basket basket--white"></div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
-
-    <div class="container-content container-content--transparent">
-      <div class="row">
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                </div>
-                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like">
-                  <img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">54</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Ролл</p>
-                  <p class="item-text__name item-box-name">Калифорния</p>
-                  <p class="item-text__composition item-box-composition">Нори, креветка, авокадо,
-                    огурец</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">260 гр / 6 шт.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
+    <div class="col-xs">
+      <div class="box">
+        <div class="product-card aic">
+          <div class="product-card__pictures">
+            <div class="product-card-icons">
+              <div class="favorite"></div>
+            </div>
+            <img src="./assets/img/favorite/item/1p.png" alt="" class="product-card-image">
+            <div class="add-like">
+              <img src="./assets/img/favorite/like.svg" alt="" class="">
+              <span class="add-like__counter">54</span>
             </div>
           </div>
 
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                </div>
-                <img src="./assets/img/favorite/item/2p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">41</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Суп</p>
-                  <p class="item-text__name item-box-name">Мисо</p>
-                  <p class="item-text__composition item-box-composition">Сыр тофу, бульон из комбу и
-                    тунца,
-                    вакаме, паста мисо, лук-порей</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">400 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
+          <div class="product-card__info">
+            <div class="product-description">
+              <span class="product-description__type">Ролл</span>
+              <span class="product-description__name">Калифорния</span>
+              <span class="product-description__composition">Нори, креветка, авокадо,
+                огурец</span>
             </div>
 
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
+            <div class="product-card__price-quantity">
+              <div class="product-card__price">
+                <div class="price__rectangle-start"></div>
+                <div class="price__rectangle-flex">
+                  <span class="price">320 ₽</span>
                 </div>
               </div>
-
+              <div class="quantity">260 гр / 6 шт.</div>
             </div>
 
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
+            <div class="button-box">
+              <div class="counter">
+                <div class="counter-info">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
                 </div>
-                <img src="./assets/img/favorite/item/4p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p id="item-box-add-like__count" class="item-box-add-like__counter">37</p>
+              </div>
+              <div class="product-card__button">
+                <button class="button button">
+                  <span class="mg-r-10">Добавить к заказу
+                  </span>
+                  <div class="basket basket--white"></div>
                 </button>
               </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Ролл</p>
-                  <p class="item-text__name item-box-name">Филадельфия</p>
-                  <p class="item-text__composition item-box-composition">Рис, лосось, сыр филадельфия,
-                    авокадо, нори</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">260 гр / 6 шт.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                </div>
-                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">54</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Ролл</p>
-                  <p class="item-text__name item-box-name">Калифорния</p>
-                  <p class="item-text__composition item-box-composition">Нори, креветка, авокадо,
-                    огурец</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">260 гр / 6 шт.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
             </div>
           </div>
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                </div>
-                <img src="./assets/img/favorite/item/1p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like">
-                  <img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">54</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Ролл</p>
-                  <p class="item-text__name item-box-name">Калифорния</p>
-                  <p class="item-text__composition item-box-composition">Нори, креветка, авокадо,
-                    огурец</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">260 гр / 6 шт.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                </div>
-                <img src="./assets/img/favorite/item/2p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">41</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Суп</p>
-                  <p class="item-text__name item-box-name">Мисо</p>
-                  <p class="item-text__composition item-box-composition">Сыр тофу, бульон из комбу и
-                    тунца,
-                    вакаме, паста мисо, лук-порей</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">400 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-        <div class="col-xs">
-          <div class="box">
-            <div class="item-box">
-              <div class="item-box__pictures">
-                <div class="item-box-icons">
-                  <button class="item-box-icons__favorite"></button>
-                  <img src="./assets/img/favorite/veg.svg" alt="">
-                  <img src="./assets/img/favorite/hot.svg" alt="">
-                </div>
-                <img src="./assets/img/favorite/item/3p.png" alt="" class="item-box-image">
-                <button class="item-box-add-like"><img src="./assets/img/favorite/like.svg" alt="" class="">
-                  <p class="item-box-add-like__counter">26</p>
-                </button>
-              </div>
-
-              <div class="item-info">
-                <div class="item-info__title">
-                  <p class="item-text__type item-box-type">Вок</p>
-                  <p class="item-text__name item-box-name">Тофу с яйцом</p>
-                  <p class="item-text__composition item-box-composition">Лапша соба, яица перепелиные,
-                    тофу,
-                    лук-порей, зелень, соевые соус</p>
-                </div>
-
-                <div class="item-info__price-quantity item-box__price-quantity">
-                  <div class="item-info__price">
-                    <div class="rectangle-start"></div>
-                    <div class="rectangle-flex">
-                      <p class="item-text__price">320 ₽</p>
-                    </div>
-
-                  </div>
-                  <div class="item-info__quantity">350 гр.</div>
-                </div>
-
-                <div class="item-info__button-counter">
-                  <div class="item-info__counter">
-                    <div class="item-info__counter-quantity">1</div>
-                    <button class="item-info__plus"></button>
-                    <button class="item-info__minus"></button>
-                  </div>
-                  <button class="item-info-button item-info-button item-box-button">
-                    <p class="item-info-button__name">Добавить к заказу</p>
-                    <div class="item-info-button__basket"></div>
-                  </button>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
       </div>
+
     </div>
+    <div class="col-xs">
+      <div class="box">
+        <div class="product-card aic">
+          <div class="product-card__pictures">
+            <div class="product-card-icons">
+              <div class="favorite"></div>
+            </div>
+            <img src="./assets/img/favorite/item/1p.png" alt="" class="product-card-image">
+            <div class="add-like">
+              <img src="./assets/img/favorite/like.svg" alt="" class="">
+              <span class="add-like__counter">54</span>
+            </div>
+          </div>
 
-    <div class="container-content container-content--transparent">
-      <div class="pages-navigation">
-        <div class="pages-navigation-box">
-          <a href="#" class="pages-navigation-button">
-            <img src="./assets/img/items-gallery/arrow-left.svg" alt="">
-          </a>
-          <a href="#" class="pages-navigation-button pages-navigation-button--active">
-            <span class="pages-navigation-button__number">1</span>
-          </a>
-          <a href="#" class="pages-navigation-button">
-            <span class="pages-navigation-button__number">2</span>
-          </a>
-          <a href="#" class="pages-navigation-button">
-            <span class="pages-navigation-button__number">3</span>
-          </a>
-          <a href="#" class="pages-navigation-button">
-            <span class="pages-navigation-button__number">4</span>
-          </a>
-          <a href="#" class="pages-navigation-button">
-            <span class="pages-navigation-button__number">5</span>
-          </a>
+          <div class="product-card__info">
+            <div class="product-description">
+              <span class="product-description__type">Ролл</span>
+              <span class="product-description__name">Калифорния</span>
+              <span class="product-description__composition">Нори, креветка, авокадо,
+                огурец</span>
+            </div>
 
-          <a href="#" class="pages-navigation-button">
-            <img src="./assets/img/items-gallery/arrow-right.svg" alt="">
-          </a>
+            <div class="product-card__price-quantity">
+              <div class="product-card__price">
+                <div class="price__rectangle-start"></div>
+                <div class="price__rectangle-flex">
+                  <span class="price">320 ₽</span>
+                </div>
+              </div>
+              <div class="quantity">260 гр / 6 шт.</div>
+            </div>
+
+            <div class="button-box">
+              <div class="counter">
+                <div class="counter-info">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
+                </div>
+              </div>
+              <div class="product-card__button">
+                <button class="button button">
+                  <span class="mg-r-10">Добавить к заказу
+                  </span>
+                  <div class="basket basket--white"></div>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <footer class="container-content container-content--footer">
+    </div>
+    <div class="col-xs">
+      <div class="box">
+        <div class="product-card aic">
+          <div class="product-card__pictures">
+            <div class="product-card-icons">
+              <div class="favorite"></div>
+            </div>
+            <img src="./assets/img/favorite/item/1p.png" alt="" class="product-card-image">
+            <div class="add-like">
+              <img src="./assets/img/favorite/like.svg" alt="" class="">
+              <span class="add-like__counter">54</span>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <div class="product-description">
+              <span class="product-description__type">Ролл</span>
+              <span class="product-description__name">Калифорния</span>
+              <span class="product-description__composition">Нори, креветка, авокадо,
+                огурец</span>
+            </div>
+
+            <div class="product-card__price-quantity">
+              <div class="product-card__price">
+                <div class="price__rectangle-start"></div>
+                <div class="price__rectangle-flex">
+                  <span class="price">320 ₽</span>
+                </div>
+              </div>
+              <div class="quantity">260 гр / 6 шт.</div>
+            </div>
+
+            <div class="button-box">
+              <div class="counter">
+                <div class="counter-info">
+                  <button class="counter__plus"></button>
+                  <div class="counter__quantity">1</div>
+                  <button class="counter__minus"></button>
+                </div>
+              </div>
+              <div class="product-card__button">
+                <button class="button button">
+                  <span class="mg-r-10">Добавить к заказу
+                  </span>
+                  <div class="basket basket--white"></div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container-content container-content--transparent">
+  <div class="pages-navigation">
+    <div class="pages-navigation-box">
+      <a href="#" class="pages-navigation-button">
+        <img src="./assets/img/items-gallery/arrow-left.svg" alt="">
+      </a>
+      <a href="#" class="pages-navigation-button pages-navigation-button--active">
+        <span class="pages-navigation-button__number">1</span>
+      </a>
+      <a href="#" class="pages-navigation-button">
+        <span class="pages-navigation-button__number">2</span>
+      </a>
+      <a href="#" class="pages-navigation-button">
+        <span class="pages-navigation-button__number">3</span>
+      </a>
+      <a href="#" class="pages-navigation-button">
+        <span class="pages-navigation-button__number">4</span>
+      </a>
+      <a href="#" class="pages-navigation-button">
+        <span class="pages-navigation-button__number">5</span>
+      </a>
+
+      <a href="#" class="pages-navigation-button">
+        <img src="./assets/img/items-gallery/arrow-right.svg" alt="">
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="container-content mg-t-60 mg-b-0">
   <div class="footer">
     <div class="footer-left">
-      <p class="footer-left__rights">© 2017 OishīSushi</p>
-      <p class="footer-left__agree">Согласие на обработку персональных данных</p>
+      <span class="footer-left__rights">© 2017 OishīSushi</span>
+      <a href="#" class="footer-left__agree">Согласие на обработку персональных данных</a>
     </div>
     <div class="footer-center">
       <div class="footer-center-address-phone">
-        <p class="footer-center-address-phone__title">АДРЕС</p>
-        <p class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</p>
+        <spam class="footer-center-address-phone__title">АДРЕС</spam>
+        <span class="footer-center-address-phone__name">г. Москва, ул. Московская, 56</span>
       </div>
       <div class="footer-center-address-phone">
-        <p class="footer-center-address-phone__title">ТЕЛЕФОН</p>
+        <span class="footer-center-address-phone__title">ТЕЛЕФОН</span>
         <div class="footer-center-address-phone__name-callback">
           <a href="tel:7495450600" class="footer-center-address-phone__name">7 (495) 450 - 600</a>
-          <p class="footer-left__agree">Обратная свзяь</p>
+          <a href="#" class="footer-left__agree">Обратная свзяь</a>
         </div>
       </div>
     </div>
@@ -1067,13 +449,18 @@
       <a href="#" class="footer-social"> <img src="./assets/img/footer/social/inst.svg" alt=""> </a>
     </div>
   </div>
+</footer>
+</div>
 
-
-
-  </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="./assets/js/swiper-main.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApt2nP2xfyeGsW-6SFxJW_1dLC-AFMSIU&callback=myMap"></script>
+<script src="./assets/js/jquery.js"></script>
+<script src="./assets/js/jquery.nice-select.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./assets/js/swiper-main.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 
 </html>

@@ -14,9 +14,10 @@ let project_folder = "dist",
     src: {
       html: [source_folder + "/*.html", "!" + source_folder + "/~*.html"],
       css: [source_folder + "/assets/styles/style.scss", source_folder + "/assets/styles/reset.css"],
-      js: [source_folder + "/assets/js/script.js",  source_folder + "/assets/js/*.js"],
+      js: [source_folder + "/assets/js/script.js", source_folder + "/assets/js/*.js"],
       img: source_folder + "/assets/img/**/*.{jpg,png,svg,ico,webp}",
-      fonts: source_folder + "/assets/fonts/*.otf"},
+      fonts: source_folder + "/assets/fonts/*.otf"
+    },
 
     watch: {
       html: source_folder + "/**/*.html",
@@ -40,8 +41,6 @@ const { src, dest } = require('gulp'),
   rename = require("gulp-rename"),
   uglify = require('gulp-uglify-es').default,
   imagemin = require('gulp-imagemin'),
-  webp = require('gulp-webp'),
-  svgSprite = require('gulp-svg-sprite'),
   ttf2woff = require('gulp-ttf2woff'),
   ttf2woff2 = require('gulp-ttf2woff2');
 
@@ -60,15 +59,10 @@ function browserSync(done) {
 
 function images() {
   return src(path.src.img)
-    .pipe(webp({
-quality: 70
-    }))
-    .pipe(dest(path.build.img))
-    .pipe(src(path.src.img))
     .pipe(imagemin({
       interlaced: true,
       progressive: true,
-      svgoPlugins: [{removeViewBox: true}],
+      svgoPlugins: [{ removeViewBox: true }],
       optimizationLevel: 5
     }))
     .pipe(dest(path.build.img))
@@ -94,53 +88,48 @@ function js() {
     .pipe(browsersync.stream())
 }
 
-function fonts(){
-    src(path.src.fonts)
-        .pipe(ttf2woff())
-        .pipe(dest(path.build.fonts));
+function fonts(done) {
+  src(path.src.fonts)
+    .pipe(ttf2woff())
+    .pipe(dest(path.build.fonts));
 
-   return src(path.src.fonts)
+  src(path.src.fonts)
     .pipe(ttf2woff2())
     .pipe(dest(path.build.fonts))
+
+  done();
 }
 
-function sassComp() {
-  return src(path.src.css)
 
-    .pipe(
-      sass({
-        outputStyle: 'expanded'
-      })
-    )
-
+function sassComp(done) {
+  src(path.src.css)
+    .pipe(sass().on('error', sass.logError))
     .pipe(group_media())
-
     .pipe(
       autoprefixer({
         overridebrowserlist: ["last 5 version"],
         cascede: true
       })
     )
-
-    .pipe(dest(path.build.css))
-
     .pipe(clean_css())
-
     .pipe(rename({
       extname: ".min.css"
     }))
-
     .pipe(dest(path.build.css))
 
-    .pipe(browsersync.stream())
-    
+  browsersync.reload();
+  done();
+
 }
 
-function watchFiles(params) {
-  gulp.watch([path.watch.html], html),
-    gulp.watch([path.watch.css], sassComp)
-    gulp.watch([path.watch.js], js)
-    gulp.watch([path.watch.img], images)
+function watchFiles(done) {
+
+  gulp.watch([path.watch.html], html)
+  gulp.watch([path.watch.css], sassComp)
+  gulp.watch([path.watch.js], js)
+  gulp.watch([path.watch.img], images)
+
+  done();
 }
 
 function clean() {
@@ -148,13 +137,8 @@ function clean() {
 }
 
 let build = gulp.series(clean, gulp.parallel(js, sassComp, html, images, fonts));
-let watch = gulp.parallel(build, watchFiles, browserSync);
+let watch = gulp.series(build, watchFiles, browserSync);
 
-exports.fonts = fonts;
-exports.images = images;
-exports.js = js;
-exports.sass = sass;
-exports.html = html;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
