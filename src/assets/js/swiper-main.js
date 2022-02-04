@@ -42,17 +42,5 @@ var swiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
         width: 600, 
       },
-    
-      // 320: {
-      //   allowTouchMove:true,
-      //   slidesPerView: 3,
-      //   width: 900,  
-      // },
-
-    // 0: {
-    //     allowTouchMove:true,
-    //     slidesPerView: 2,
-    //     width: 600,  
-    //   },
     }
   });

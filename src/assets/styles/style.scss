@@ -1524,7 +1524,7 @@ body, html {
 }
 
 .basket-list {
-  width: calc((100%-20px) / 2);
+  width: calc((100% - 20px) / 2);
 
 
 
@@ -2646,6 +2646,8 @@ li {
 .aic{
   align-items: center;
 }
+
+.swiper-backface-hidden{max-width: 100%; overflow: hidden;}
 
 .mg {
   &-bt-0 {
